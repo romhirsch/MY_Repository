@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html >
+<html >
+<head>
+<style>
+
+    table {
+      border-collapse: collapse;
+
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border-bottom: 1px solid #DDD;
+    }
+
+    tr:hover {background-color: #D6EEEE;}
+</style>
+</head>
+<body>
+ <p align="center">
+     <img src="/static/logo.png">
+    {{message}}
+ </p>
+    
+{{data | safe}}
+
+</tbody>
+</table>
+<p>
+<form action="{{ url_for('downloadCsv') }}" method="Get" align="right">
+
+    <button name="download" type="submit">הורד קובץ</button>
+</form>
+
+</p>
+
+<p>
+
+<form action="{{ url_for('addEntity') }}" method="Get" align="right">
+    <button name="add" type="submit">הוסף</button>
+</form>
+</p>
+</body>
+
+
+
+
+</html>
+
+    
