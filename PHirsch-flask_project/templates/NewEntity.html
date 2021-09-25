@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הוספת קריאה </title>
+</head>
+
+<body>
+<h1>הוספת קריאה למערכת</h1>
+<form method="POST" enctype=multipart/form-data action="{{ url_for('addEntity') }}">
+
+    <p >
+        תאריך פתיחת קריאה
+    <input type="date" name="date">
+    </p>
+
+    <p >
+        שם הלקוח
+    <input type="text" name="clientName">
+    </p>
+
+    <p >
+        כתובת
+    <input type="text" name="addres">
+    </p>
+
+    <p >
+        טלפון
+    <input type="text" name="phone">
+    </p>
+
+    <p >
+        מהות התקלה
+    <input type="text" size=50 name="faultImformation">
+
+    </p>
+
+    <p >
+        דחיפות התקלה
+        <select name="severity">
+        <option value="רגיל">רגיל</option>
+        <option value="דחוף">דחוף</option>
+        </select>
+    </p>
+
+
+
+
+
+    תמונה
+    <input type=file name=photo>
+    <p >
+    <button type="submit">שמור</button>
+    </p>
+
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>עריכת קריאה  {{index}}</title>
+</head>
+<body>
+<form method="POST">
+<p >
+    תאריך פתיחת קריאה
+<input type="date" name="date">
+<p >
+
+<p >
+    שם הלקוח
+<input type="text" name="date">
+<p >
+ <input type="file"  accept="image/png, image/jpeg" name="image"/>
+
+
+<button type="submit">שמור</button>
+</form>
+
+
+
+<form method=POST enctype=multipart/form-data action="{{ url_for('addEntity') }}">
+    תמונה
+    <input type=file name=photo>
+    <button type="submit">שמור</button>
+</form>
+
+</body>
+</html>

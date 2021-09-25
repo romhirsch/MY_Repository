@@ -1,0 +1,8 @@
+ <p align="center" >
+     <form action="{{ url_for('addEntity') }}" method="Get" align="center">
+         <button type="submit">חיפוש</button>
+         <input type="text" name="search">
+     </form>
+
+
+ </p>
