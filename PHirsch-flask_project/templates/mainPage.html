@@ -4,9 +4,9 @@
 <style>
 
     table {
-      border-collapse: collapse;
-
-      width: 100%;
+       font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
     }
 
     th, td {
@@ -14,8 +14,15 @@
       text-align: center;
       border-bottom: 1px solid #DDD;
     }
-
-    tr:hover {background-color: #D6EEEE;}
+    tr:nth-child(even){background-color: #f2f2f2;}
+    tr:hover {background-color: #ddd;}
+    th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: DodgerBlue;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -23,25 +30,52 @@
      <img src="/static/logo.png">
     {{message}}
  </p>
-    
+  <p align="center">
+
+ <form action="{{ url_for('home') }}" method="POST" align="center">
+         <button name="searchcheckbox" type="submit">חפש</button>
+
+        <input type="checkbox" name="closeCB" value="close" > הצג קריאות סגורות
+
+</form>
+   </p>
+
 {{data | safe}}
 
 </tbody>
 </table>
+
+
+
+ <p>
+
+<form action="{{ url_for('addEntity') }}" method="Get" align="center">
+    <button name="add" type="submit">הוסף קריאה חדשה</button>
+</form>
+
+
+ <h3 align="right">
+    הורדת קבצים
+ </h3>
+
+</p>
 <p>
 <form action="{{ url_for('downloadCsv') }}" method="Get" align="right">
 
-    <button name="download" type="submit">הורד קובץ</button>
+    <button name="download" type="submit">הורד קובץ קריאות פתוחות</button>
 </form>
 
 </p>
 
-<p>
+ <p>
+<form action="{{ url_for('downloadCsvWithClose') }}" method="Get" align="right">
 
-<form action="{{ url_for('addEntity') }}" method="Get" align="right">
-    <button name="add" type="submit">הוסף</button>
+    <button name="download" type="submit">הורד קובץ קריאות </button>
 </form>
+
 </p>
+
+
 </body>
 
 
