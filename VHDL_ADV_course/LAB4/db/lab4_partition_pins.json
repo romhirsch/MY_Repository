@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fifo_empty",
+					"strict" : false
+				},
+				{
+					"name" : "fifo_full",
+					"strict" : false
+				},
+				{
+					"name" : "rd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "rr",
+					"strict" : false
+				},
+				{
+					"name" : "wr",
+					"strict" : false
+				},
+				{
+					"name" : "wd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wd[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,179 @@
+|CSA_adder
+A[0] => CSA:GEN_ADD:0:GEN_ADD0:CSA0.a[0]
+A[1] => CSA:GEN_ADD:1:GEN_ADDi:CSA_i.a[0]
+A[2] => CSA:GEN_ADD:2:GEN_ADDi:CSA_i.a[0]
+A[3] => CSA:GEN_ADD:2:GEN_ADDi:CSA_i.a[1]
+A[4] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.a[0]
+A[5] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.a[1]
+A[6] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.a[2]
+A[7] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.a[0]
+A[8] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.a[1]
+A[9] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.a[2]
+A[10] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.a[3]
+A[11] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.a[0]
+A[12] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.a[1]
+A[13] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.a[2]
+A[14] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.a[3]
+A[15] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.a[4]
+B[0] => CSA:GEN_ADD:0:GEN_ADD0:CSA0.b[0]
+B[1] => CSA:GEN_ADD:1:GEN_ADDi:CSA_i.b[0]
+B[2] => CSA:GEN_ADD:2:GEN_ADDi:CSA_i.b[0]
+B[3] => CSA:GEN_ADD:2:GEN_ADDi:CSA_i.b[1]
+B[4] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.b[0]
+B[5] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.b[1]
+B[6] => CSA:GEN_ADD:3:GEN_ADDi:CSA_i.b[2]
+B[7] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.b[0]
+B[8] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.b[1]
+B[9] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.b[2]
+B[10] => CSA:GEN_ADD:4:GEN_ADDi:CSA_i.b[3]
+B[11] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.b[0]
+B[12] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.b[1]
+B[13] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.b[2]
+B[14] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.b[3]
+B[15] => CSA:GEN_ADD:5:GEN_ADDi:CSA_i.b[4]
+Carry_in => CSA:GEN_ADD:0:GEN_ADD0:CSA0.cin
+Carry_out << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.carry_out
+res[0] << CSA:GEN_ADD:0:GEN_ADD0:CSA0.s[0]
+res[1] << CSA:GEN_ADD:1:GEN_ADDi:CSA_i.s[0]
+res[2] << CSA:GEN_ADD:2:GEN_ADDi:CSA_i.s[0]
+res[3] << CSA:GEN_ADD:2:GEN_ADDi:CSA_i.s[1]
+res[4] << CSA:GEN_ADD:3:GEN_ADDi:CSA_i.s[0]
+res[5] << CSA:GEN_ADD:3:GEN_ADDi:CSA_i.s[1]
+res[6] << CSA:GEN_ADD:3:GEN_ADDi:CSA_i.s[2]
+res[7] << CSA:GEN_ADD:4:GEN_ADDi:CSA_i.s[0]
+res[8] << CSA:GEN_ADD:4:GEN_ADDi:CSA_i.s[1]
+res[9] << CSA:GEN_ADD:4:GEN_ADDi:CSA_i.s[2]
+res[10] << CSA:GEN_ADD:4:GEN_ADDi:CSA_i.s[3]
+res[11] << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.s[0]
+res[12] << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.s[1]
+res[13] << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.s[2]
+res[14] << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.s[3]
+res[15] << CSA:GEN_ADD:5:GEN_ADDi:CSA_i.s[4]
+
+
+|CSA_adder|CSA:\GEN_ADD:0:GEN_ADD0:CSA0
+a[0] => Add0.IN1
+a[0] => Add1.IN1
+b[0] => Add0.IN2
+b[0] => Add1.IN2
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CSA_adder|CSA:\GEN_ADD:1:GEN_ADDi:CSA_i
+a[0] => Add0.IN1
+a[0] => Add1.IN1
+b[0] => Add0.IN2
+b[0] => Add1.IN2
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CSA_adder|CSA:\GEN_ADD:2:GEN_ADDi:CSA_i
+a[0] => Add0.IN2
+a[0] => Add1.IN2
+a[1] => Add0.IN1
+a[1] => Add1.IN1
+b[0] => Add0.IN4
+b[0] => Add1.IN4
+b[1] => Add0.IN3
+b[1] => Add1.IN3
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CSA_adder|CSA:\GEN_ADD:3:GEN_ADDi:CSA_i
+a[0] => Add0.IN3
+a[0] => Add1.IN3
+a[1] => Add0.IN2
+a[1] => Add1.IN2
+a[2] => Add0.IN1
+a[2] => Add1.IN1
+b[0] => Add0.IN6
+b[0] => Add1.IN6
+b[1] => Add0.IN5
+b[1] => Add1.IN5
+b[2] => Add0.IN4
+b[2] => Add1.IN4
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CSA_adder|CSA:\GEN_ADD:4:GEN_ADDi:CSA_i
+a[0] => Add0.IN4
+a[0] => Add1.IN4
+a[1] => Add0.IN3
+a[1] => Add1.IN3
+a[2] => Add0.IN2
+a[2] => Add1.IN2
+a[3] => Add0.IN1
+a[3] => Add1.IN1
+b[0] => Add0.IN8
+b[0] => Add1.IN8
+b[1] => Add0.IN7
+b[1] => Add1.IN7
+b[2] => Add0.IN6
+b[2] => Add1.IN6
+b[3] => Add0.IN5
+b[3] => Add1.IN5
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CSA_adder|CSA:\GEN_ADD:5:GEN_ADDi:CSA_i
+a[0] => Add0.IN5
+a[0] => Add1.IN5
+a[1] => Add0.IN4
+a[1] => Add1.IN4
+a[2] => Add0.IN3
+a[2] => Add1.IN3
+a[3] => Add0.IN2
+a[3] => Add1.IN2
+a[4] => Add0.IN1
+a[4] => Add1.IN1
+b[0] => Add0.IN10
+b[0] => Add1.IN10
+b[1] => Add0.IN9
+b[1] => Add1.IN9
+b[2] => Add0.IN8
+b[2] => Add1.IN8
+b[3] => Add0.IN7
+b[3] => Add1.IN7
+b[4] => Add0.IN6
+b[4] => Add1.IN6
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => s.OUTPUTSELECT
+cin => carry_out.OUTPUTSELECT
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

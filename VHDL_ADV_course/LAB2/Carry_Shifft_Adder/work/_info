@@ -1,0 +1,146 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder
+Eadd16_tb
+Z1 w1635878183
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 32
+R0
+Z6 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd
+Z7 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd
+l0
+L6 1
+VWa7f@`QS^L59?;>fN[gJI2
+!s100 zCCnA1Xb96o9fMc=N0X[d3
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1635878188
+!i10b 1
+Z10 !s108 1635878188.000000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd|
+Z12 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd|
+!i113 1
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Aarc_add16_tb
+R2
+R3
+R4
+R5
+DEx4 work 8 add16_tb 0 22 Wa7f@`QS^L59?;>fN[gJI2
+!i122 32
+l29
+L10 41
+Ve<>DzbGVDHAP4=_zI7n<n2
+!s100 EWLEkWJRFYKbGlg><BFJX1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecsa
+Z15 w1635877317
+R2
+R3
+R4
+R5
+!i122 33
+R0
+Z16 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd
+Z17 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd
+l0
+L7 1
+V<m`bh9ahgVF:?cD7=l94R2
+!s100 ;KCEn@K<j<kO7UHR`i7==1
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd|
+Z19 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd|
+!i113 1
+R13
+R14
+Aarc_rca
+R2
+R3
+R4
+R5
+DEx4 work 3 csa 0 22 <m`bh9ahgVF:?cD7=l94R2
+!i122 33
+l20
+L18 10
+V`dEPQ;K2NMeNoKHec?9k<1
+!s100 :UF[Ad1C[M39jfbCQlhTe3
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ecsa_adder
+Z20 w1635708431
+R2
+R3
+R4
+R5
+!i122 34
+R0
+Z21 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd
+Z22 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd
+l0
+L6 1
+V5bYNif48IGKleDOgEcM2@1
+!s100 I<9@a9z48GF=IXl21MNne1
+R8
+32
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd|
+Z24 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd|
+!i113 1
+R13
+R14
+Aarc_rca
+R2
+R3
+R4
+R5
+Z25 DEx4 work 9 csa_adder 0 22 5bYNif48IGKleDOgEcM2@1
+!i122 34
+l59
+Z26 L17 72
+Z27 V>;XQ`n7QcZ9ch0m]ll6z[3
+Z28 !s100 m?gznES3^L`4_EVVe5J>;1
+R8
+32
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14

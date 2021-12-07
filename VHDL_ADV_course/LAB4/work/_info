@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4
+Efifo
+Z1 w1637695230
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 155
+R0
+Z7 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/FIFO.vhd
+Z8 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/FIFO.vhd
+l0
+L8 1
+VeFB5@_9NQ]TQCYdGzl<o01
+!s100 CCT_aQfW9l>?Aj@HW]fKj3
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1637789678
+!i10b 1
+Z11 !s108 1637789678.000000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/FIFO.vhd|
+Z13 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/FIFO.vhd|
+!i113 1
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Asyn
+R2
+R3
+R4
+R5
+R6
+Z16 DEx4 work 4 fifo 0 22 eFB5@_9NQ]TQCYdGzl<o01
+!i122 155
+l32
+L25 45
+V_4;zG7bJl_i@dN@K57QPG2
+!s100 dd1;n@0b3UZkGaDM>mlIK2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Elab4
+Z17 w1637258124
+R2
+R3
+R4
+R5
+R6
+!i122 43
+R0
+R7
+R8
+l0
+L8 1
+VI91Ec4Ji6dUT`5Eh62:X@0
+!s100 ]QDW_bI:D2Zj1Rf_R=R_L1
+R9
+32
+Z18 !s110 1637314265
+!i10b 1
+Z19 !s108 1637314265.000000
+R12
+R13
+!i113 1
+R14
+R15
+Asyn
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 lab4 0 22 I91Ec4Ji6dUT`5Eh62:X@0
+!i122 43
+l29
+L24 34
+V?>e?]a0aeLOi0e2nRVI273
+!s100 lFLAIo:bg;U2ogI3m4JVV2
+R9
+32
+R18
+!i10b 1
+R19
+R12
+R13
+!i113 1
+R14
+R15
+Etb_fifo
+Z20 w1637789668
+Z21 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R3
+R2
+R5
+R6
+!i122 156
+R0
+Z22 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/TB_FIFO.vhd
+Z23 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/TB_FIFO.vhd
+l0
+L10 1
+VC5dI;f^B[:hkok8VfJJYK0
+!s100 9[Rk>>ROiUhdPJT;1eEzh1
+R9
+32
+R10
+!i10b 1
+R11
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/TB_FIFO.vhd|
+Z25 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB4/TB_FIFO.vhd|
+!i113 1
+R14
+R15
+Aarc_fifo
+R4
+R16
+R21
+R3
+R2
+R5
+R6
+Z26 DEx4 work 7 tb_fifo 0 22 C5dI;f^B[:hkok8VfJJYK0
+!i122 156
+l46
+L14 180
+V7RYE>`jo]QRb4cDJDC@Rf1
+!s100 Vo1?h`kRD6U^ATFCcX_2S3
+R9
+32
+R10
+!i10b 1
+R11
+R24
+R25
+!i113 1
+R14
+R15

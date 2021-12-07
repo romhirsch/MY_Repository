@@ -1,0 +1,109 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+--------------------------------
+entity CSA_addr is
+generic (n: positive:=16);
+port ( 			
+		A  		: in  std_logic_vector(n-1 downto 0);
+		B  		: in  std_logic_vector(n-1 downto 0);
+		Carry_in: in  std_logic;
+		Carry_out: out  std_logic;
+		res  		: out std_logic_vector(n-1 downto 0);
+		
+	  );
+end entity CSA_addr;
+
+architecture arc_rca of CSA_addr is
+
+component CSA is
+	generic (size: integer:=16);
+	port (
+       a				: in  std_logic_vector((size-1) downto 0);
+		 b				: in  std_logic_vector((size-1) downto 0);
+		 cin			: in std_logic; 
+		 carry_out 	: out std_logic; 
+       s				: out std_logic_vector((size-1) downto 0)
+      );
+end component RCAMP;
+	
+ function location (
+    i    : in integer)
+    return integer is
+    variable loc : integer := 1;
+  begin
+    for j in 0 to i-1 loop
+      loc := loc +j;
+    end loop;
+    return loc;
+     
+  end function location;
+  
+signal carrys : std_logic_vector(n-1 downto 0);
+
+begin
+
+  -- for I in 1 to n-1 generate
+			
+		CSA0 : CSA generic map(size => 1)
+			port map(			
+				a  		=>A(0),
+				b	 		=>B(0),
+				cin		=> Carry_in,
+				Carry_out => carrys(0),
+				res => res(0)
+			);
+			
+		CSA1 : CSA generic map(size => 1)
+			port map(			
+				a  		=>A(1),
+				b	 		=>B(1),
+				cin		=> Carry_in,
+				Carry_out => carrys(1),
+				res => res(1)
+			);
+					
+		CSA2 : CSA generic map(size => 2)
+			port map(			
+				a  		=>A(3 downto 2),
+				b	 		=>B(3 downto 2),
+				cin		=> Carry_in,
+				Carry_out => carrys(3 downto 2),
+				res => res(3 downto 2)
+			);
+		CSA3 : CSA generic map(size => 3)
+			port map(			
+				a  		=>A(6 downto 4),
+				b	 		=>B(6 downto 4),
+				cin		=> Carry_in,
+				Carry_out => carrys(6 downto 4),
+				res => res(6 downto 4)
+			);
+		CSA4 : CSA generic map(size => 4)
+			port map(			
+				a  		=>A(10 downto 7),
+				b	 		=>B(10 downto 7),
+				cin		=> Carry_in,
+				Carry_out => carrys(10 downto 7),
+				res => res(10 downto 7)
+			);
+		CSA5 : CSA generic map(size => 5)
+			port map(			
+				a  		=>A(11 downto 15),
+				b	 		=>B(11 downto 15),
+				cin		=> Carry_in,
+				Carry_out => carrys(11 downto 15),
+				res => res(11 downto 15)
+			);
+			
+			
+			
+		
+
+        
+ --  end generate GEN_REG;
+	
+
+
+end architecture;

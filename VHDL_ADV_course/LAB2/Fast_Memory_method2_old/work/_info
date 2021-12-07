@@ -1,0 +1,189 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2
+Efast_mul2
+Z1 w1636115775
+Z2 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+R0
+Z7 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2.vhd
+Z8 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2.vhd
+l0
+L9 1
+VF[B2i<cSPDUg^R?`00jc]0
+!s100 aZKkG1K]YdL4Jhd1;2`7N1
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1636115785
+!i10b 1
+Z11 !s108 1636115785.000000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2.vhd|
+Z13 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2.vhd|
+!i113 1
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Asyn
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 fast_mul2 0 22 F[B2i<cSPDUg^R?`00jc]0
+!i122 11
+l45
+L23 84
+VLR<9fKMi<8=>=[40iBaO:0
+!s100 ie`@@MNL>5i3JAc1KDP>32
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Efirst_mul_tb
+Z16 w1636114208
+Z17 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R4
+R5
+R6
+!i122 12
+R0
+Z18 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2_TB.vhd
+Z19 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2_TB.vhd
+l0
+L8 1
+Va3mkkb?a6L3aZ8505S`>L1
+!s100 c_m@XUVY[IBU2eT6=;BBN1
+R9
+32
+R10
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2_TB.vhd|
+Z21 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/fast_mul2_TB.vhd|
+!i113 1
+R14
+R15
+Afirst_mul_tb_arc
+R17
+R4
+R5
+R6
+DEx4 work 12 first_mul_tb 0 22 a3mkkb?a6L3aZ8505S`>L1
+!i122 12
+l34
+L12 65
+VTUS3_21MNQ8Uhg^`FMc8;2
+!s100 P<1c<6nhZ]HB]G5Z=3bBQ3
+R9
+32
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R14
+R15
+Erom_256_16
+Z22 w1636009722
+R2
+R5
+R6
+!i122 13
+R0
+Z23 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_256_16.vhd
+Z24 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_256_16.vhd
+l0
+Z25 L43 1
+V^NzT1[@EG[Q@>2cRDXSnf0
+!s100 QC29bb`WJA2iYX4[cK;:T2
+R9
+32
+R10
+!i10b 1
+R11
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_256_16.vhd|
+Z27 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_256_16.vhd|
+!i113 1
+R14
+R15
+Asyn
+R2
+R5
+R6
+DEx4 work 10 rom_256_16 0 22 ^NzT1[@EG[Q@>2cRDXSnf0
+!i122 13
+l58
+Z28 L54 33
+Vo7k_>EfoCbAdzGoOG;[OR2
+!s100 9VYZhc]ZJQQkRkEb?4?Z21
+R9
+32
+R10
+!i10b 1
+R11
+R26
+R27
+!i113 1
+R14
+R15
+Erom_512_16
+Z29 w1636114369
+R2
+R5
+R6
+!i122 14
+R0
+Z30 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_512_16.vhd
+Z31 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_512_16.vhd
+l0
+R25
+VKFVk3ZIbX2[G>mgD2e8642
+!s100 ABZioEUCN^@han?izHe4i3
+R9
+32
+Z32 !s110 1636115786
+!i10b 1
+R11
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_512_16.vhd|
+Z34 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Fast_Memory_method2/ROM_512_16.vhd|
+!i113 1
+R14
+R15
+Asyn
+R2
+R5
+R6
+Z35 DEx4 work 10 rom_512_16 0 22 KFVk3ZIbX2[G>mgD2e8642
+!i122 14
+l58
+R28
+Z36 V2]5`hmY[YkjZb`N;kDMIo3
+Z37 !s100 C`WO=kzV[WB<;zBE;Y5lj1
+R9
+32
+R32
+!i10b 1
+R11
+R33
+R34
+!i113 1
+R14
+R15

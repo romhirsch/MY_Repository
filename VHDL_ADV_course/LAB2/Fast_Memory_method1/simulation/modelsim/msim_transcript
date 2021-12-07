@@ -1,0 +1,142 @@
+# Reading pref.tcl
+# do lab2bn_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/fast_mul.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:17 on Oct 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/fast_mul.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package altera_mf_components
+# -- Compiling entity fast_mul
+# -- Compiling architecture SYN of fast_mul
+# End time: 23:42:17 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/ROM_256_8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:17 on Oct 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/ROM_256_8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ROM_256_8
+# -- Compiling architecture SYN of rom_256_8
+# End time: 23:42:17 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/first_mul_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:17 on Oct 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/first_mul_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity first_mul_tb
+# -- Compiling architecture first_mul_tb_arc of first_mul_tb
+# End time: 23:42:17 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/first_mul_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:18 on Oct 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/first_mul_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity first_mul_tb
+# -- Compiling architecture first_mul_tb_arc of first_mul_tb
+# End time: 23:42:18 on Oct 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 23:42:18 on Oct 31,2021
+# ** Error: (vsim-3170) Could not find 'tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/cycloneive
+#             C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/simulation/modelsim/rtl_work
+#             C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/Fast_Memory_method1/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab2bn_run_msim_rtl_vhdl.do PAUSED at line 14
+vsim work.first_mul_tb
+# vsim work.first_mul_tb 
+# Start time: 23:42:18 on Oct 31,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.first_mul_tb(first_mul_tb_arc)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_mf.altera_mf_components
+# Loading work.fast_mul(syn)
+# Loading work.rom_256_8(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+add wave -position insertpoint  \
+sim:/first_mul_tb/rst \
+sim:/first_mul_tb/mul_out \
+sim:/first_mul_tb/correct \
+sim:/first_mul_tb/clk \
+sim:/first_mul_tb/b \
+sim:/first_mul_tb/a
+run 100 ns 
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add wave -position insertpoint  \
+sim:/first_mul_tb/rst \
+sim:/first_mul_tb/mul_out \
+sim:/first_mul_tb/correct \
+sim:/first_mul_tb/clk \
+sim:/first_mul_tb/b \
+sim:/first_mul_tb/a
+add wave -position insertpoint  \
+sim:/first_mul_tb/rst \
+sim:/first_mul_tb/mul_out \
+sim:/first_mul_tb/correct \
+sim:/first_mul_tb/clk \
+sim:/first_mul_tb/b \
+sim:/first_mul_tb/a
+add wave -position insertpoint  \
+sim:/first_mul_tb/rst \
+sim:/first_mul_tb/mul_out \
+sim:/first_mul_tb/correct \
+sim:/first_mul_tb/clk \
+sim:/first_mul_tb/b \
+sim:/first_mul_tb/a
+# End time: 23:44:45 on Oct 31,2021, Elapsed time: 0:02:27
+# Errors: 1, Warnings: 0

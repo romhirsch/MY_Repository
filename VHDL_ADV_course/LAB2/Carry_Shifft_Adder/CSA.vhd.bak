@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+--------------------------------
+
+entity CSA is
+generic (size: integer);
+port (
+       a				: in  std_logic_vector((size-1) downto 0);
+		 b				: in  std_logic_vector((size-1) downto 0);
+		 cin			: in std_logic; 
+		 carry_out 	: out std_logic; 
+       s				: out std_logic_vector(size downto 0)
+      );
+end entity RCA ;
+
+architecture arc_rca  of RCA is
+	signal t1,t0	: std_logic_vector(size+1 downto 0)
+begin
+t1<=('0' & a '1' ) + ('0' & b & '1');
+t0<=('0' & a '1' ) + ('0' & b & '1');
+s<= t1((t1`left -1) downto 1 ) when (cin = '1') else 
+	t0((t0`left -1) downto 1 );
+carry_out<= t1((t1`left )) when (cin = '1') else 
+	t0((t0`left -1));	
+end architecture arc_rca;

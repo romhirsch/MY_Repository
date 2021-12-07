@@ -1,0 +1,96 @@
+# Reading pref.tcl
+# do sadder_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:49 on Nov 02,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CSA
+# -- Compiling architecture arc_rca of CSA
+# End time: 20:03:49 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:49 on Nov 02,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/CSA_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CSA_adder
+# -- Compiling architecture arc_rca of CSA_adder
+# End time: 20:03:50 on Nov 02,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:03:50 on Nov 02,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/add16_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity add16_tb
+# -- Compiling architecture arc_add16_tb of add16_tb
+# End time: 20:03:50 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 20:03:50 on Nov 02,2021
+# ** Error: (vsim-3170) Could not find 'tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/cycloneive
+#             C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/simulation/modelsim/rtl_work
+#             C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/LAB2/Carry_Shifft_Adder/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sadder_run_msim_rtl_vhdl.do PAUSED at line 13
+vsim work.add16_tb
+# vsim work.add16_tb 
+# Start time: 20:03:50 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.add16_tb(arc_add16_tb)
+# Loading work.csa_adder(arc_rca)
+# Loading work.csa(arc_rca)
+add wave -position insertpoint  \
+sim:/add16_tb/res \
+sim:/add16_tb/n \
+sim:/add16_tb/correct \
+sim:/add16_tb/Carry_out \
+sim:/add16_tb/Carry_in \
+sim:/add16_tb/B \
+sim:/add16_tb/A
+run 100ns 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /add16_tb
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /add16_tb
+# End time: 20:09:27 on Nov 02,2021, Elapsed time: 0:05:37
+# Errors: 1, Warnings: 2

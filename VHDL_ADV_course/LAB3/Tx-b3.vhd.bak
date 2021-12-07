@@ -1,0 +1,83 @@
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+LIBRARY altera_mf;
+LIBRARY work;
+use work.func_pack.all;
+USE altera_mf.altera_mf_components.all;
+--------------------------------------------
+
+ENTITY Tx-b3  IS
+	generic (n: positive:=8);
+	PORT
+	(
+		data_in		: IN STD_LOGIC_VECTOR  (n-1 DOWNTO 0);
+		EN			: IN STD_LOGIC;
+		clock		: IN STD_LOGIC;
+		data_out	: OUT STD_LOGIC_VECTOR (get_cideword_size+n-1 DOWNTO 0);
+		rst 		: IN STD_LOGIC
+		
+	);
+END Tx-b3 ;
+ 
+
+
+ARCHITECTURE SYN OF Tx-b3  IS
+
+TYPE Information_table is array (n+get_cideword_size(n) downto 1) of std_logic_vector(get_cideword_size(n)-1 downto 0);
+
+BEGIN 
+	
+process(clock,rst)
+	variable m : integer;
+	variable data_table : : Information_table;
+	variable calc_parity : std_logic_vector (get_cideword_size(n)-1 downto 0);
+begin 
+
+	 if rising_edge(clock) then
+		--calculate parity 
+		for column in 0 to get_cideword_size(n)-1 loop;	
+			calc_parity(column):=='0';
+			for line_num in 2**column+1 to n+get_cideword_size(n) loop 
+					if data_table(column)(line_num) = '1' then 
+						calc_parity(column) := calc_parity(column) xor '1';
+					end if;
+			end loop;
+		end loop;
+		
+			
+		--generate data_out 
+		for i in 1 to n+get_cideword_size(n) loop
+			varible m : std_logic ; 
+			varible k : std_logic ; 
+		begin
+			if i =0 then
+				m:=0;
+				k:=0;
+			end if;
+			if ((2**m)=i) then 
+					data_out(i-1)<=calc_parity(m);
+					m := m +1;
+			else
+					data_out(i-1)<=calc_parity(k);
+					k := k+1;
+			end if;
+		end loop;		
+	end if;
+	
+	if rst = '1' then 
+		data_out<=(others=>'0');
+		for i in 1 to n+get_cideword_size(n) loop
+			data_table(i) := conv_std_logic_vector(i,get_cideword_size(n));
+		end loop;
+	end if;
+			
+end process;
+	
+end architecture;					
+		
+
+
+		
+

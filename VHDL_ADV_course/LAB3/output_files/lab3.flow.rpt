@@ -1,0 +1,138 @@
+Flow report for lab3
+Tue Nov 16 20:57:52 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Nov 16 20:57:52 2021       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; lab3                                        ;
+; Top-level Entity Name              ; Tx                                          ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 3                                           ;
+;     Dedicated logic registers      ; 8                                           ;
+; Total registers                    ; 8                                           ;
+; Total pins                         ; 15                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/16/2021 20:57:45 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lab3                ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++-------------------------------------+----------------------------------------+---------------+---------------+----------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id           ;
++-------------------------------------+----------------------------------------+---------------+---------------+----------------------+
+; COMPILER_SIGNATURE_ID               ; 27214213955618.163708906525612         ; --            ; --            ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; --            ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; Rx.vhd        ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; Tx.vhd        ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; func_pack.vhd ; --                   ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; --            ; eda_design_synthesis ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_INPUT_GND_NAME                  ; Gnd                                    ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_GND_NAME                  ; Gnd                                    ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_GND_NAME                  ; Gnd                                    ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_INPUT_VCC_NAME                  ; Vcc                                    ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_VCC_NAME                  ; Vcc                                    ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_INPUT_VCC_NAME                  ; Vcc                                    ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; --            ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation       ;
+; EDA_RUN_TOOL_AUTOMATICALLY          ; Off                                    ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_RUN_TOOL_AUTOMATICALLY          ; Off                                    ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_RUN_TOOL_AUTOMATICALLY          ; Off                                    ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_SHOW_LMF_MAPPING_MESSAGES       ; Off                                    ; --            ; Rx.vhd        ; eda_design_synthesis ;
+; EDA_SHOW_LMF_MAPPING_MESSAGES       ; Off                                    ; --            ; Tx.vhd        ; eda_design_synthesis ;
+; EDA_SHOW_LMF_MAPPING_MESSAGES       ; Off                                    ; --            ; func_pack.vhd ; eda_design_synthesis ;
+; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --            ; --                   ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation       ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Tx            ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Tx            ; Top                  ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Tx            ; Top                  ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --                   ;
+; TOP_LEVEL_ENTITY                    ; Tx                                     ; lab3          ; --            ; --                   ;
++-------------------------------------+----------------------------------------+---------------+---------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4789 MB             ; 00:00:16                           ;
+; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:16                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-5FT71UO  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
+
+
+

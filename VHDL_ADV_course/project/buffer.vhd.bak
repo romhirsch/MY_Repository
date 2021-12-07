@@ -1,0 +1,29 @@
+signal memor,memog,memob: std_logic_vector((pic_width*color_depth) -1 downto 0); 
+signal ccr,ccg, ccb:curr_color(0 to (pic_width+1)); 
+signal br, bg, bb: row_3;
+signal cntr, cntw: std_logic_vector(log_2(pic_height) -1 downto 0);
+
+ccr<= memor(memor'high downto memor'high -color_depth +1) & stdlv2curr_color(memor)
+      memor(color_depth-1 downto memor'low) ;
+ccg<= memog(memog'high downto memog'high -color_depth +1) & stdlv2curr_color(memog)
+      memog(color_depth-1 downto memog'low) ;
+ccb<= memob(memob'high downto memob'high -color_depth +1) & stdlv2curr_color(memob)
+      memob(color_depth-1 downto memob'low) ;	  
+process (clk,rst) is
+begin
+	if(rst='0') then	
+		br<=(others=>(others=>(others=>'0')));
+		bg<=(others=>(others=>(others=>'0')));
+		bb<=(others=>(others=>(others=>'0')));
+		cntr<=(others=>'0');
+		cntw<=(others=>'0');
+    elsif rising_edge(clk) then
+        cntr<=cntr+ re;
+		cntw<=cntw+ we;
+		if(push='1') then	
+			br<=ccr & br(0 to 1);
+			bg<=ccg & bg(0 to 1);
+			bb<=ccb & bb(0 to 1);
+		end if;
+	end if;
+end process;	
