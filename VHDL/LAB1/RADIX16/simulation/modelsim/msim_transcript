@@ -1,0 +1,317 @@
+# Reading pref.tcl
+# do VHDL_RADIX16_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/VHDL_RADIX16/mul1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:31:08 on Oct 16,2021
+# vcom -reportprogress 300 -93 -work work C:/VHDL_RADIX16/mul1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mul1
+# -- Compiling architecture arc_mul of mul1
+# End time: 22:31:08 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/VHDL_RADIX16/mul1_TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:31:08 on Oct 16,2021
+# vcom -reportprogress 300 -93 -work work C:/VHDL_RADIX16/mul1_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mul1_tb
+# -- Compiling architecture arc_mul_tb of mul1_tb
+# End time: 22:31:08 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 22:31:08 on Oct 16,2021
+# ** Error: (vsim-3170) Could not find 'tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/cycloneive
+#             C:/VHDL_RADIX16/simulation/modelsim/rtl_work
+#             C:/VHDL_RADIX16/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./VHDL_RADIX16_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.mul1_tb
+# vsim work.mul1_tb 
+# Start time: 22:31:08 on Oct 16,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mul1_tb(arc_mul_tb)
+# Loading ieee.numeric_std(body)
+# Loading work.mul1(arc_mul)
+add wave -position insertpoint  \
+sim:/mul1_tb/done
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/mul1_tb/res
+add wave -position insertpoint  \
+sim:/mul1_tb/b
+add wave -position insertpoint  \
+sim:/mul1_tb/a
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add watch  \
+sim:/mul1_tb/b
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# WARNING: No extended dataflow license exists
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step -out -current
+# Requested step location(s) not found!
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# End time: 22:41:34 on Oct 16,2021, Elapsed time: 0:10:26
+# Errors: 1, Warnings: 0
