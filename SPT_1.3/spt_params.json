@@ -1,0 +1,65 @@
+{
+    "globalParams": {
+        "TargetHostName": "wfmpri",
+        "TargetIP": "10.10.10.52",
+        "LoadingUsers": 90,
+        "YearlyProcs": 750,
+        "INITIAL_STUDY_DB_UID": 558952,
+        "INITIAL_PATIENT_DB_UID": 558952,
+        "TimeToRun": 400,
+        "LOADINGMETHOD": "FLOAD",
+        "MAX_STUDY_DB_UID": 0,
+        "STUDY_ONLINE": "'Y'",
+        "WORKING_DAYS_YEARLY": 225,
+        "WORKING_HOURS_PER_DAY": 8,
+        "READS_PER_STUDY": 5,
+        "CSV": true,
+        "SiteRange": [
+            "0",
+            "5"
+        ]
+    },
+    "DB": {
+        "DB_USERNAME": "medistore",
+        "TargetDBIP": "10.10.10.100",
+        "DB_USER_PASSWORD": "a1r4c3h6",
+        "localhost": "hostname"
+    },
+    "SleepTime": {
+        "Sleep_between_loads": 45,
+        "CR_SLEEP_TIME": 60,
+        "CT_SLEEP_TIME": 300,
+        "US_SLEEP_TIME": 180,
+        "MR_SLEEP_TIME": 180,
+        "MG_SLEEP_TIME": 180,
+        "DBT_SLEEP_TIME": 180
+    },
+    "InfluxDb": {
+        "influxdb_method": "POST",
+        "influxdb_host": "10.2.21.150",
+        "influxdb_port": 8086,
+        "influxdb_path": "/write",
+        "influxdb_query_string": "db=telegraf",
+        "influxmode": false
+    },
+    "Staf": {
+        "staf": 0,
+        "syslog": "npls4.pl.algotec.co.il"
+    },
+    "Qido": {
+        "QIDO_USER": "x",
+        "QIDO_DURATION": 1,
+        "QIDO_DURATION_TIME": 3,
+        "QIDO_TEST": false,
+        "QIDO_SCENARIOS": [
+            "Study",
+            "Series",
+            "instances",
+            "patient",
+            "instances_random",
+            "series_random_study",
+            "patient_with_patientid",
+            "study_modality"
+        ]
+    }
+}

@@ -1,0 +1,52 @@
+{
+	"stress": 
+	{
+		"concurrent_limit": 5,
+		"metadata_ratio": 0.5,
+		"json_ratio": 0.7
+	},
+	"smoke":
+	{
+		
+	},
+	"logic": 
+	{
+		"study_pixeldata_ratio": 0.7,
+		"series_metadata_ratio": 0.3,
+		"series_pixeldata_ratio": 0.5,
+		"json_ratio": 0.5,
+		"load_all_series": 0.5
+	},
+	"parallel": 
+	{
+		"concurrent_limit": 5,
+		"metadata_ratio": 0.5,
+		"json_ratio": 0.7
+	},
+	"sequential": 
+	{
+		"metadata_ratio": 0.5,
+		"json_ratio": 0.7
+	},
+	"studyWithSeries":
+	{
+		"loading_type": "metadata"
+	},
+	"general":
+	{
+		"ip": "localhost",
+		"db_username": "medistore",
+		"db_password": "a1r4c3h6",
+		"study_list_path": "",
+		"output_path": ".\\test-plans",
+		"tests_num": 10,
+		"min_study_images": 500,
+		"sort_by_insert_date": "True",
+		"load_level_prob":
+			{
+				"study": 60,
+				"series": 30,
+				"image": 10
+			}
+	}
+}

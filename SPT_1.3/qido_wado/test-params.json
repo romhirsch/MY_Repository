@@ -1,0 +1,59 @@
+[{
+	"active": "True",
+	"called_ae": "vmneroFIR",
+	"ip": "localhost", 
+	"authentication": 
+	{
+		"method" : "basic",
+		"username": "x", 
+		"password": "x",
+		"token_id": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ2bW5hbGEiLCJzdWIiOiJ4QGRuIiwiYXVkIjoiMCIsIm5vbmNlIjoibXlub25jZSIsImV4cCI6MTY0MDk1MTc3NiwiaWF0IjoxNjA5NDE1Nzc2LCIiOiIxNjA5NDE1Nzc2IiwibmJmIjoxNjA5NDE1Nzc2fQ.Kv7JNFZ1XPbHo_FI5vsrqi5_rxRJ6-jYZQeE8-D-Nww6cbx2HSYEvt8MT-3B4NZRoePgC-uiZg3jCP-igbjPUVz60rey_1HVkrxsPu4zRMPHZi865IvgcBrKwi8dT1zvVd3OzvxCPqFujF9iaI7mz7Kve4H8qwB3HLtV5QQtd_Yl3FiqZjNV7nlmCv9zx7GxbYq_UiZSsfQN0nlSLRTlBZIvV7dmfoKSG3_ijv6G_BsfZomX1N93PO-QL8ySnQCShgfVMvSkdA0pI0HuCuETz_sdLXpv43nnHc5Zlua5I9HwzOnFRUEYF5GPJlAR-x9AmDFJ_w8gk0VtwS7VLxNq2g",
+		"db_username": "medistore",
+		"db_password": "a1r4c3h6"
+	},
+	"db_ip": "localhost",
+	"test_plan_path" : "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\test_plan_wado.csv",
+	"restart_between_tests": "False",
+	"output_format": "csv",
+	"output_path": "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\Results",
+	"export_response_output": "True",
+	"request_timeout_minutes": 3,
+	"requests_per_minutes": 100,
+	"comment": "test1"
+},
+{
+	"active": "False",
+	"called_ae": "vmneroFIR",
+	"ip": "localhost", 
+	"username": "ci", 
+	"password": "ci", 
+	"db_ip": "localhost",
+	"db_username": "medistore",
+	"db_password": "a1r4c3h6",
+	"test_plan_path" : "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\test_plan_qido.csv",
+	"restart_between_tests": "False",
+	"output_format": "excel",
+	"output_path": "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\Results",
+	"export_response_output": "False",
+	"request_timeout_minutes": 2,
+	"requests_per_minutes": 200
+},
+{
+	"active": "False",
+	"called_ae": "dlsFIR",
+	"ip": "10.3.100.115", 
+	"username": "x", 
+	"password": "x", 
+	"db_ip": "localhost",
+	"db_username": "medistore",
+	"db_password": "a1r4c3h6",
+	"test_plan_path" : "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\test_plan.csv",
+	"restart_required": "False",
+	"output_format": "excel",
+	"output_path": "C:\\Users\\Administrator\\Desktop\\Web-Services-Testers\\WadoRS-results",
+	"export_loaded_data": "False",
+	"request_timeout_minutes": 2,
+	"requests_per_minutes": 500,
+	"caching": "false"
+}]
+

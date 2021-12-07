@@ -1,0 +1,1342 @@
+2021-11-17 12:40:04,913 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-11-18 11:28:45,362 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-11-22 08:00:38,714 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-11-23 23:41:55,400 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-11-24 08:16:15,877 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-11-24 08:16:15,877 - INFO - Logging level: 10
+2021-11-24 08:16:15,877 - INFO - Sleep duration: 1.73
+2021-11-24 08:16:15,877 - INFO - ActualCommand: C:\PROGRA~1\CAREST~1\System5\utils\tool_verify.exe -c wfmpriFIR
+2021-11-24 08:16:16,308 - INFO - ActualCommand: C:\PROGRA~1\CAREST~1\System5\utils\tool_verify.exe -c wfmpriFIR
+2021-11-24 08:16:16,308 - INFO - Tool_verify_test wfmpriFIR is  responding to DICOM verify
+2021-11-24 08:16:16,308 - INFO - RunSQL query: select max(study_db_uid) from medistore.didb_studies ,function: 
+2021-11-24 08:16:16,349 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:16,349 - INFO - RunSQL run query select max(study_db_uid) from medistore.didb_studies
+2021-11-24 08:16:16,349 - INFO - RunSQL result [(569552,)]
+2021-11-24 08:16:16,349 - INFO - RunSQL query: select max(patient_db_uid) from medistore.didb_patients ,function: 
+2021-11-24 08:16:16,369 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:16,369 - INFO - RunSQL run query select max(patient_db_uid) from medistore.didb_patients
+2021-11-24 08:16:16,369 - INFO - RunSQL result [(569552,)]
+2021-11-24 08:16:16,379 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:16,379 - INFO - Next query command executed - QueryType = 1, Query Number = 1
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:16,379 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:16,379 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:16,379 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1695.txt']
+2021-11-24 08:16:17,827 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1695.txt']
+2021-11-24 08:16:17,827 - DEBUG - Query took 1.45 sec
+2021-11-24 08:16:17,827 - DEBUG - Query Results: 1, 1.45
+2021-11-24 08:16:17,827 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:17,827 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:17', 1, 1.45]
+2021-11-24 08:16:18,114 - INFO - finishTime=1.73
+2021-11-24 08:16:18,114 - INFO - ActualCommand: start tail -f C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:18,114 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:18,114 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:18,114 - INFO - Next query command executed - QueryType = 2, Query Number = 2
+2021-11-24 08:16:18,114 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:18,134 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:18,164 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:18,164 - INFO - RunSQL result [(560530,)]
+2021-11-24 08:16:18,174 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560530 ,function: 
+2021-11-24 08:16:18,196 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:18,196 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560530
+2021-11-24 08:16:18,196 - INFO - RunSQL result [('1412744882',)]
+2021-11-24 08:16:18,206 - INFO - GetRandomPatientSmallSite: Found matching patient 1412744882
+2021-11-24 08:16:18,206 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1412744882).
+2021-11-24 08:16:18,206 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1412744882
+2021-11-24 08:16:18,206 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1891.txt for writing...
+2021-11-24 08:16:18,207 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:18,207 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1891.txt']
+2021-11-24 08:16:18,508 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1891.txt']
+2021-11-24 08:16:18,508 - DEBUG - Query took 0.3 sec
+2021-11-24 08:16:18,508 - DEBUG - Query Results: 2, 0.3
+2021-11-24 08:16:18,508 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:18,508 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:18', 2, 0.3]
+2021-11-24 08:16:19,847 - INFO - finishTime=1.73
+2021-11-24 08:16:19,847 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:19,847 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:19,847 - INFO - Next query command executed - QueryType = 2, Query Number = 3
+2021-11-24 08:16:19,847 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:19,877 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:19,906 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:19,906 - INFO - RunSQL result [(562756,)]
+2021-11-24 08:16:19,908 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 562756 ,function: 
+2021-11-24 08:16:19,929 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:19,929 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 562756
+2021-11-24 08:16:19,929 - INFO - RunSQL result [('1369512381',)]
+2021-11-24 08:16:19,939 - INFO - GetRandomPatientSmallSite: Found matching patient 1369512381
+2021-11-24 08:16:19,939 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1369512381).
+2021-11-24 08:16:19,939 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1369512381
+2021-11-24 08:16:19,939 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1964.txt for writing...
+2021-11-24 08:16:19,939 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:19,939 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1964.txt']
+2021-11-24 08:16:20,196 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1964.txt']
+2021-11-24 08:16:20,196 - DEBUG - Query took 0.26 sec
+2021-11-24 08:16:20,196 - DEBUG - Query Results: 2, 0.26
+2021-11-24 08:16:20,196 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:20,196 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:20', 2, 0.26]
+2021-11-24 08:16:21,578 - INFO - finishTime=1.73
+2021-11-24 08:16:21,578 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:21,578 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:21,578 - INFO - Next query command executed - QueryType = 2, Query Number = 4
+2021-11-24 08:16:21,578 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:21,601 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:21,621 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:21,621 - INFO - RunSQL result [(567256,)]
+2021-11-24 08:16:21,631 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 567256 ,function: 
+2021-11-24 08:16:21,651 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:21,651 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 567256
+2021-11-24 08:16:21,651 - INFO - RunSQL result [('183512440',)]
+2021-11-24 08:16:21,651 - INFO - GetRandomPatientSmallSite: Found matching patient 183512440
+2021-11-24 08:16:21,651 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=183512440).
+2021-11-24 08:16:21,651 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 183512440
+2021-11-24 08:16:21,651 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2113.txt for writing...
+2021-11-24 08:16:21,651 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:21,651 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2113.txt']
+2021-11-24 08:16:21,979 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2113.txt']
+2021-11-24 08:16:21,979 - DEBUG - Query took 0.33 sec
+2021-11-24 08:16:21,979 - DEBUG - Query Results: 2, 0.33
+2021-11-24 08:16:21,979 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:21,979 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:21', 2, 0.33]
+2021-11-24 08:16:23,309 - INFO - finishTime=1.73
+2021-11-24 08:16:23,309 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:23,309 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:23,309 - INFO - Next query command executed - QueryType = 3, Query Number = 5
+2021-11-24 08:16:23,309 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:23,329 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:23,371 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:23,371 - INFO - RunSQL result [(569509,)]
+2021-11-24 08:16:23,374 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 569509 ,function: 
+2021-11-24 08:16:23,408 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:23,409 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 569509
+2021-11-24 08:16:23,409 - INFO - RunSQL result [('1.2.840.113704.7.1.0.5438337082133.1637734856.2',)]
+2021-11-24 08:16:23,411 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.5438337082133.1637734856.2
+2021-11-24 08:16:23,411 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.5438337082133.1637734856.2
+2021-11-24 08:16:23,411 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2395.txt for writing...
+2021-11-24 08:16:23,412 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:23,412 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2395.txt']
+2021-11-24 08:16:23,670 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2395.txt']
+2021-11-24 08:16:23,670 - DEBUG - Query took 0.26 sec
+2021-11-24 08:16:23,670 - DEBUG - Query Results: 3, 0.26
+2021-11-24 08:16:23,670 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:23,680 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:23', 3, 0.26]
+2021-11-24 08:16:25,042 - INFO - finishTime=1.73
+2021-11-24 08:16:25,042 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:25,042 - INFO - Next query command executed - QueryType = 1, Query Number = 6
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:25,042 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:25,042 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:25,042 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2573.txt']
+2021-11-24 08:16:26,773 - INFO - finishTime=1.73
+2021-11-24 08:16:26,773 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:26,773 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:26,773 - INFO - Next query command executed - QueryType = 3, Query Number = 7
+2021-11-24 08:16:26,773 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:26,796 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:26,827 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:26,827 - INFO - RunSQL result [(563837,)]
+2021-11-24 08:16:26,827 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 563837 ,function: 
+2021-11-24 08:16:26,847 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:26,847 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 563837
+2021-11-24 08:16:26,847 - INFO - RunSQL result [('1.2.840.113704.7.1.0.24486183203228226.1637722208.15',)]
+2021-11-24 08:16:26,847 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.24486183203228226.1637722208.15
+2021-11-24 08:16:26,847 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.24486183203228226.1637722208.15
+2021-11-24 08:16:26,847 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2615.txt for writing...
+2021-11-24 08:16:26,857 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:26,857 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2615.txt']
+2021-11-24 08:16:27,335 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2615.txt']
+2021-11-24 08:16:27,335 - DEBUG - Query took 0.48 sec
+2021-11-24 08:16:27,335 - DEBUG - Query Results: 3, 0.48
+2021-11-24 08:16:27,335 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:27,335 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:27', 3, 0.48]
+2021-11-24 08:16:28,504 - INFO - finishTime=1.73
+2021-11-24 08:16:28,504 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:28,504 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:28,504 - INFO - Next query command executed - QueryType = 3, Query Number = 8
+2021-11-24 08:16:28,504 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:28,527 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:28,567 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:28,567 - INFO - RunSQL result [(569441,)]
+2021-11-24 08:16:28,567 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 569441 ,function: 
+2021-11-24 08:16:28,600 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:28,600 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 569441
+2021-11-24 08:16:28,600 - INFO - RunSQL result [('1.2.840.113704.7.1.0.90122185183115253.1637734689.2',)]
+2021-11-24 08:16:28,600 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.90122185183115253.1637734689.2
+2021-11-24 08:16:28,600 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.90122185183115253.1637734689.2
+2021-11-24 08:16:28,600 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2877.txt for writing...
+2021-11-24 08:16:28,610 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:28,610 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2877.txt']
+2021-11-24 08:16:28,920 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2877.txt']
+2021-11-24 08:16:28,920 - DEBUG - Query took 0.31 sec
+2021-11-24 08:16:28,920 - DEBUG - Query Results: 3, 0.31
+2021-11-24 08:16:28,920 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:28,926 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:28', 3, 0.31]
+2021-11-24 08:16:29,130 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2573.txt']
+2021-11-24 08:16:29,130 - DEBUG - Query took 4.09 sec
+2021-11-24 08:16:29,131 - DEBUG - Query Results: 1, 4.09
+2021-11-24 08:16:29,131 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:29,136 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:29', 1, 4.09]
+2021-11-24 08:16:30,237 - INFO - finishTime=1.73
+2021-11-24 08:16:30,237 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:30,237 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:30,237 - INFO - Next query command executed - QueryType = 2, Query Number = 9
+2021-11-24 08:16:30,237 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:30,257 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:30,295 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:30,295 - INFO - RunSQL result [(567460,)]
+2021-11-24 08:16:30,297 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 567460 ,function: 
+2021-11-24 08:16:30,330 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:30,331 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 567460
+2021-11-24 08:16:30,331 - INFO - RunSQL result [('1816135908',)]
+2021-11-24 08:16:30,333 - INFO - GetRandomPatientSmallSite: Found matching patient 1816135908
+2021-11-24 08:16:30,333 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1816135908).
+2021-11-24 08:16:30,333 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1816135908
+2021-11-24 08:16:30,333 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3081.txt for writing...
+2021-11-24 08:16:30,334 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:30,334 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3081.txt']
+2021-11-24 08:16:30,578 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3081.txt']
+2021-11-24 08:16:30,578 - DEBUG - Query took 0.24 sec
+2021-11-24 08:16:30,578 - DEBUG - Query Results: 2, 0.24
+2021-11-24 08:16:30,578 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:30,590 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:30', 2, 0.24]
+2021-11-24 08:16:31,969 - INFO - finishTime=1.73
+2021-11-24 08:16:31,969 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:31,969 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:31,969 - INFO - Next query command executed - QueryType = 2, Query Number = 10
+2021-11-24 08:16:31,969 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:31,990 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:32,021 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:32,021 - INFO - RunSQL result [(563944,)]
+2021-11-24 08:16:32,021 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563944 ,function: 
+2021-11-24 08:16:32,051 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:32,051 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563944
+2021-11-24 08:16:32,051 - INFO - RunSQL result [('2014809951',)]
+2021-11-24 08:16:32,061 - INFO - GetRandomPatientSmallSite: Found matching patient 2014809951
+2021-11-24 08:16:32,061 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=2014809951).
+2021-11-24 08:16:32,061 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 2014809951
+2021-11-24 08:16:32,061 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3134.txt for writing...
+2021-11-24 08:16:32,061 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:32,061 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3134.txt']
+2021-11-24 08:16:32,433 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3134.txt']
+2021-11-24 08:16:32,433 - DEBUG - Query took 0.37 sec
+2021-11-24 08:16:32,433 - DEBUG - Query Results: 2, 0.37
+2021-11-24 08:16:32,434 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:32,438 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:32', 2, 0.37]
+2021-11-24 08:16:33,703 - INFO - finishTime=1.73
+2021-11-24 08:16:33,703 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:33,703 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:33,703 - INFO - Next query command executed - QueryType = 3, Query Number = 11
+2021-11-24 08:16:33,703 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:33,724 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:33,764 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:33,764 - INFO - RunSQL result [(564579,)]
+2021-11-24 08:16:33,764 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 564579 ,function: 
+2021-11-24 08:16:33,796 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:33,796 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 564579
+2021-11-24 08:16:33,796 - INFO - RunSQL result [('1.2.840.113704.7.1.0.17012611743143156.1637723929.2',)]
+2021-11-24 08:16:33,806 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.17012611743143156.1637723929.2
+2021-11-24 08:16:33,806 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.17012611743143156.1637723929.2
+2021-11-24 08:16:33,806 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3360.txt for writing...
+2021-11-24 08:16:33,807 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:33,807 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3360.txt']
+2021-11-24 08:16:34,058 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3360.txt']
+2021-11-24 08:16:34,058 - DEBUG - Query took 0.25 sec
+2021-11-24 08:16:34,058 - DEBUG - Query Results: 3, 0.25
+2021-11-24 08:16:34,058 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:34,068 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:34', 3, 0.25]
+2021-11-24 08:16:35,435 - INFO - finishTime=1.73
+2021-11-24 08:16:35,435 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:35,435 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:35,435 - INFO - Next query command executed - QueryType = 2, Query Number = 12
+2021-11-24 08:16:35,436 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:35,458 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:35,486 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:35,486 - INFO - RunSQL result [(563114,)]
+2021-11-24 08:16:35,486 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563114 ,function: 
+2021-11-24 08:16:35,507 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:35,507 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563114
+2021-11-24 08:16:35,507 - INFO - RunSQL result [('3474984352',)]
+2021-11-24 08:16:35,507 - INFO - GetRandomPatientSmallSite: Found matching patient 3474984352
+2021-11-24 08:16:35,507 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=3474984352).
+2021-11-24 08:16:35,517 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 3474984352
+2021-11-24 08:16:35,517 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3544.txt for writing...
+2021-11-24 08:16:35,517 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:35,517 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3544.txt']
+2021-11-24 08:16:35,763 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3544.txt']
+2021-11-24 08:16:35,763 - DEBUG - Query took 0.25 sec
+2021-11-24 08:16:35,763 - DEBUG - Query Results: 2, 0.25
+2021-11-24 08:16:35,763 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:35,773 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:35', 2, 0.25]
+2021-11-24 08:16:37,172 - INFO - finishTime=1.74
+2021-11-24 08:16:37,172 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:37,172 - INFO - Next query command executed - QueryType = 1, Query Number = 13
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:37,172 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:37,172 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:37,172 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3749.txt']
+2021-11-24 08:16:38,586 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3749.txt']
+2021-11-24 08:16:38,587 - DEBUG - Query took 1.42 sec
+2021-11-24 08:16:38,587 - DEBUG - Query Results: 1, 1.42
+2021-11-24 08:16:38,587 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:38,587 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:38', 1, 1.42]
+2021-11-24 08:16:38,907 - INFO - finishTime=1.73
+2021-11-24 08:16:38,907 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:38,907 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:38,907 - INFO - Next query command executed - QueryType = 2, Query Number = 14
+2021-11-24 08:16:38,907 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:38,938 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:38,969 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:38,969 - INFO - RunSQL result [(561420,)]
+2021-11-24 08:16:38,971 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 561420 ,function: 
+2021-11-24 08:16:38,996 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:38,996 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 561420
+2021-11-24 08:16:38,996 - INFO - RunSQL result [('2202517199',)]
+2021-11-24 08:16:38,996 - INFO - GetRandomPatientSmallSite: Found matching patient 2202517199
+2021-11-24 08:16:38,996 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=2202517199).
+2021-11-24 08:16:38,996 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 2202517199
+2021-11-24 08:16:38,996 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3818.txt for writing...
+2021-11-24 08:16:38,996 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:39,006 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3818.txt']
+2021-11-24 08:16:39,247 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3818.txt']
+2021-11-24 08:16:39,247 - DEBUG - Query took 0.24 sec
+2021-11-24 08:16:39,247 - DEBUG - Query Results: 2, 0.24
+2021-11-24 08:16:39,247 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:39,257 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:39', 2, 0.24]
+2021-11-24 08:16:40,640 - INFO - finishTime=1.73
+2021-11-24 08:16:40,640 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:40,640 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:40,640 - INFO - Next query command executed - QueryType = 2, Query Number = 15
+2021-11-24 08:16:40,640 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:40,661 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:40,699 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:40,699 - INFO - RunSQL result [(563958,)]
+2021-11-24 08:16:40,701 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563958 ,function: 
+2021-11-24 08:16:40,734 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:40,734 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563958
+2021-11-24 08:16:40,734 - INFO - RunSQL result [('2762478735',)]
+2021-11-24 08:16:40,734 - INFO - GetRandomPatientSmallSite: Found matching patient 2762478735
+2021-11-24 08:16:40,734 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=2762478735).
+2021-11-24 08:16:40,734 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 2762478735
+2021-11-24 08:16:40,734 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4015.txt for writing...
+2021-11-24 08:16:40,734 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:40,734 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4015.txt']
+2021-11-24 08:16:40,989 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4015.txt']
+2021-11-24 08:16:40,989 - DEBUG - Query took 0.26 sec
+2021-11-24 08:16:40,989 - DEBUG - Query Results: 2, 0.26
+2021-11-24 08:16:40,989 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:40,989 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:40', 2, 0.26]
+2021-11-24 08:16:42,372 - INFO - finishTime=1.73
+2021-11-24 08:16:42,372 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:42,372 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:42,372 - INFO - Next query command executed - QueryType = 3, Query Number = 16
+2021-11-24 08:16:42,372 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:42,395 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:42,426 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:42,426 - INFO - RunSQL result [(566727,)]
+2021-11-24 08:16:42,429 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 566727 ,function: 
+2021-11-24 08:16:42,459 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:42,460 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 566727
+2021-11-24 08:16:42,460 - INFO - RunSQL result [('1.2.840.113704.7.1.0.13510461568454.1637728650.3',)]
+2021-11-24 08:16:42,462 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.13510461568454.1637728650.3
+2021-11-24 08:16:42,462 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.13510461568454.1637728650.3
+2021-11-24 08:16:42,462 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4257.txt for writing...
+2021-11-24 08:16:42,463 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:42,463 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4257.txt']
+2021-11-24 08:16:42,703 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4257.txt']
+2021-11-24 08:16:42,703 - DEBUG - Query took 0.24 sec
+2021-11-24 08:16:42,703 - DEBUG - Query Results: 3, 0.24
+2021-11-24 08:16:42,703 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:42,713 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:42', 3, 0.24]
+2021-11-24 08:16:44,102 - INFO - finishTime=1.73
+2021-11-24 08:16:44,102 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:44,102 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:44,102 - INFO - Next query command executed - QueryType = 1, Query Number = 17
+2021-11-24 08:16:44,104 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:44,104 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:44,104 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:44,104 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:44,105 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:44,105 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:44,105 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4468.txt']
+2021-11-24 08:16:45,517 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4468.txt']
+2021-11-24 08:16:45,517 - DEBUG - Query took 1.41 sec
+2021-11-24 08:16:45,517 - DEBUG - Query Results: 1, 1.41
+2021-11-24 08:16:45,517 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:45,527 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:45', 1, 1.41]
+2021-11-24 08:16:45,838 - INFO - finishTime=1.74
+2021-11-24 08:16:45,838 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:45,838 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:45,838 - INFO - Next query command executed - QueryType = 2, Query Number = 18
+2021-11-24 08:16:45,838 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:45,868 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:45,907 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:45,907 - INFO - RunSQL result [(562544,)]
+2021-11-24 08:16:45,909 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 562544 ,function: 
+2021-11-24 08:16:45,938 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:45,938 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 562544
+2021-11-24 08:16:45,938 - INFO - RunSQL result [('1227987547',)]
+2021-11-24 08:16:45,938 - INFO - GetRandomPatientSmallSite: Found matching patient 1227987547
+2021-11-24 08:16:45,938 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1227987547).
+2021-11-24 08:16:45,938 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1227987547
+2021-11-24 08:16:45,938 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4591.txt for writing...
+2021-11-24 08:16:45,938 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:45,938 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4591.txt']
+2021-11-24 08:16:46,246 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4591.txt']
+2021-11-24 08:16:46,246 - DEBUG - Query took 0.31 sec
+2021-11-24 08:16:46,246 - DEBUG - Query Results: 2, 0.31
+2021-11-24 08:16:46,247 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:46,249 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:46', 2, 0.31]
+2021-11-24 08:16:47,577 - INFO - finishTime=1.74
+2021-11-24 08:16:47,577 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:47,577 - INFO - Next query command executed - QueryType = 1, Query Number = 19
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:47,577 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:47,577 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:47,577 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4713.txt']
+2021-11-24 08:16:49,311 - INFO - finishTime=1.73
+2021-11-24 08:16:49,311 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:49,311 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:49,311 - INFO - Next query command executed - QueryType = 3, Query Number = 20
+2021-11-24 08:16:49,311 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:49,332 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:49,372 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:49,372 - INFO - RunSQL result [(565514,)]
+2021-11-24 08:16:49,372 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 565514 ,function: 
+2021-11-24 08:16:49,395 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:49,396 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 565514
+2021-11-24 08:16:49,396 - INFO - RunSQL result [('1.2.840.113704.7.1.0.3119710543231111.1637725970.3',)]
+2021-11-24 08:16:49,398 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.3119710543231111.1637725970.3
+2021-11-24 08:16:49,398 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.3119710543231111.1637725970.3
+2021-11-24 08:16:49,398 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4969.txt for writing...
+2021-11-24 08:16:49,399 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:49,399 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4969.txt']
+2021-11-24 08:16:49,651 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4969.txt']
+2021-11-24 08:16:49,651 - DEBUG - Query took 0.25 sec
+2021-11-24 08:16:49,651 - DEBUG - Query Results: 3, 0.25
+2021-11-24 08:16:49,651 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:49,651 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:49', 3, 0.25]
+2021-11-24 08:16:51,041 - INFO - finishTime=1.73
+2021-11-24 08:16:51,041 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:51,041 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:51,041 - INFO - Next query command executed - QueryType = 2, Query Number = 21
+2021-11-24 08:16:51,041 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:51,061 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:51,086 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:51,086 - INFO - RunSQL result [(566146,)]
+2021-11-24 08:16:51,086 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566146 ,function: 
+2021-11-24 08:16:51,117 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:51,117 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566146
+2021-11-24 08:16:51,117 - INFO - RunSQL result [('907407445',)]
+2021-11-24 08:16:51,117 - INFO - GetRandomPatientSmallSite: Found matching patient 907407445
+2021-11-24 08:16:51,117 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=907407445).
+2021-11-24 08:16:51,117 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 907407445
+2021-11-24 08:16:51,117 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query5147.txt for writing...
+2021-11-24 08:16:51,127 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:51,127 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5147.txt']
+2021-11-24 08:16:51,380 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5147.txt']
+2021-11-24 08:16:51,380 - DEBUG - Query took 0.25 sec
+2021-11-24 08:16:51,380 - DEBUG - Query Results: 2, 0.25
+2021-11-24 08:16:51,380 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:51,385 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:51', 2, 0.25]
+2021-11-24 08:16:51,679 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4713.txt']
+2021-11-24 08:16:51,679 - DEBUG - Query took 4.1 sec
+2021-11-24 08:16:51,679 - DEBUG - Query Results: 1, 4.1
+2021-11-24 08:16:51,679 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:51,690 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:51', 1, 4.1]
+2021-11-24 08:16:52,772 - INFO - finishTime=1.73
+2021-11-24 08:16:52,772 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:52,772 - INFO - Next query command executed - QueryType = 1, Query Number = 22
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:52,772 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:52,772 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:52,772 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5276.txt']
+2021-11-24 08:16:54,246 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5276.txt']
+2021-11-24 08:16:54,247 - DEBUG - Query took 1.48 sec
+2021-11-24 08:16:54,247 - DEBUG - Query Results: 1, 1.48
+2021-11-24 08:16:54,247 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:54,252 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:54', 1, 1.48]
+2021-11-24 08:16:54,506 - INFO - finishTime=1.73
+2021-11-24 08:16:54,506 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:16:54,506 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:54,506 - INFO - Next query command executed - QueryType = 1, Query Number = 23
+2021-11-24 08:16:54,506 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:54,507 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:54,507 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:16:54,507 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:54,507 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:16:54,507 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:16:54,507 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5433.txt']
+2021-11-24 08:16:55,990 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5433.txt']
+2021-11-24 08:16:55,990 - DEBUG - Query took 1.48 sec
+2021-11-24 08:16:55,990 - DEBUG - Query Results: 1, 1.48
+2021-11-24 08:16:55,990 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:55,990 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:55', 1, 1.48]
+2021-11-24 08:16:56,237 - INFO - finishTime=1.73
+2021-11-24 08:16:56,237 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:56,237 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:56,237 - INFO - Next query command executed - QueryType = 2, Query Number = 24
+2021-11-24 08:16:56,238 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:56,262 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:56,293 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:56,293 - INFO - RunSQL result [(568962,)]
+2021-11-24 08:16:56,304 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 568962 ,function: 
+2021-11-24 08:16:56,325 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:56,325 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 568962
+2021-11-24 08:16:56,325 - INFO - RunSQL result [('3532427566',)]
+2021-11-24 08:16:56,325 - INFO - GetRandomPatientSmallSite: Found matching patient 3532427566
+2021-11-24 08:16:56,325 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=3532427566).
+2021-11-24 08:16:56,325 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 3532427566
+2021-11-24 08:16:56,325 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query5642.txt for writing...
+2021-11-24 08:16:56,325 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:56,325 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5642.txt']
+2021-11-24 08:16:56,818 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5642.txt']
+2021-11-24 08:16:56,818 - DEBUG - Query took 0.49 sec
+2021-11-24 08:16:56,818 - DEBUG - Query Results: 2, 0.49
+2021-11-24 08:16:56,818 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:56,828 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:56', 2, 0.49]
+2021-11-24 08:16:57,969 - INFO - finishTime=1.73
+2021-11-24 08:16:57,969 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:16:57,969 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:57,969 - INFO - Next query command executed - QueryType = 2, Query Number = 25
+2021-11-24 08:16:57,969 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:57,990 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:58,022 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:58,022 - INFO - RunSQL result [(565063,)]
+2021-11-24 08:16:58,022 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 565063 ,function: 
+2021-11-24 08:16:58,052 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:58,052 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 565063
+2021-11-24 08:16:58,052 - INFO - RunSQL result [('723824863',)]
+2021-11-24 08:16:58,062 - INFO - GetRandomPatientSmallSite: Found matching patient 723824863
+2021-11-24 08:16:58,062 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=723824863).
+2021-11-24 08:16:58,062 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 723824863
+2021-11-24 08:16:58,062 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query5785.txt for writing...
+2021-11-24 08:16:58,062 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:16:58,062 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5785.txt']
+2021-11-24 08:16:58,301 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5785.txt']
+2021-11-24 08:16:58,301 - DEBUG - Query took 0.24 sec
+2021-11-24 08:16:58,301 - DEBUG - Query Results: 2, 0.24
+2021-11-24 08:16:58,301 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:16:58,311 - INFO - Create Csv - append to Csv : ['2021-11-24 08:16:58', 2, 0.24]
+2021-11-24 08:16:59,701 - INFO - finishTime=1.73
+2021-11-24 08:16:59,701 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:16:59,701 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:16:59,701 - INFO - Next query command executed - QueryType = 3, Query Number = 26
+2021-11-24 08:16:59,701 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:16:59,722 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:59,762 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:16:59,762 - INFO - RunSQL result [(563128,)]
+2021-11-24 08:16:59,762 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 563128 ,function: 
+2021-11-24 08:16:59,786 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:16:59,786 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 563128
+2021-11-24 08:16:59,786 - INFO - RunSQL result [('1.2.840.113704.7.1.0.6220171865127.1637720650.26',)]
+2021-11-24 08:16:59,796 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.6220171865127.1637720650.26
+2021-11-24 08:16:59,796 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.6220171865127.1637720650.26
+2021-11-24 08:16:59,796 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query5952.txt for writing...
+2021-11-24 08:16:59,796 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:16:59,796 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5952.txt']
+2021-11-24 08:17:00,163 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query5952.txt']
+2021-11-24 08:17:00,164 - DEBUG - Query took 0.37 sec
+2021-11-24 08:17:00,164 - DEBUG - Query Results: 3, 0.37
+2021-11-24 08:17:00,164 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:00,169 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:00', 3, 0.37]
+2021-11-24 08:17:01,433 - INFO - finishTime=1.73
+2021-11-24 08:17:01,433 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:01,433 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:01,433 - INFO - Next query command executed - QueryType = 1, Query Number = 27
+2021-11-24 08:17:01,433 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:01,434 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:01,434 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:01,434 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:01,434 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:01,434 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:01,435 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query178.txt']
+2021-11-24 08:17:02,827 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query178.txt']
+2021-11-24 08:17:02,827 - DEBUG - Query took 1.39 sec
+2021-11-24 08:17:02,827 - DEBUG - Query Results: 1, 1.39
+2021-11-24 08:17:02,827 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:02,827 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:02', 1, 1.39]
+2021-11-24 08:17:03,173 - INFO - finishTime=1.74
+2021-11-24 08:17:03,173 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:03,173 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:03,173 - INFO - Next query command executed - QueryType = 3, Query Number = 28
+2021-11-24 08:17:03,173 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:03,197 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:03,228 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:03,228 - INFO - RunSQL result [(561404,)]
+2021-11-24 08:17:03,228 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 561404 ,function: 
+2021-11-24 08:17:03,268 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:03,268 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 561404
+2021-11-24 08:17:03,268 - INFO - RunSQL result [('1.2.840.113704.7.1.0.381722433417555.1637716582.3',)]
+2021-11-24 08:17:03,278 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.381722433417555.1637716582.3
+2021-11-24 08:17:03,278 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.381722433417555.1637716582.3
+2021-11-24 08:17:03,278 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query361.txt for writing...
+2021-11-24 08:17:03,278 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:03,278 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query361.txt']
+2021-11-24 08:17:03,519 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query361.txt']
+2021-11-24 08:17:03,519 - DEBUG - Query took 0.24 sec
+2021-11-24 08:17:03,519 - DEBUG - Query Results: 3, 0.24
+2021-11-24 08:17:03,519 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:03,529 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:03', 3, 0.24]
+2021-11-24 08:17:04,903 - INFO - finishTime=1.73
+2021-11-24 08:17:04,903 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:04,903 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:04,903 - INFO - Next query command executed - QueryType = 1, Query Number = 29
+2021-11-24 08:17:04,903 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:04,904 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:04,904 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:04,904 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:04,904 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:04,905 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:04,905 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query461.txt']
+2021-11-24 08:17:06,390 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query461.txt']
+2021-11-24 08:17:06,390 - DEBUG - Query took 1.49 sec
+2021-11-24 08:17:06,390 - DEBUG - Query Results: 1, 1.49
+2021-11-24 08:17:06,390 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:06,396 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:06', 1, 1.49]
+2021-11-24 08:17:06,639 - INFO - finishTime=1.74
+2021-11-24 08:17:06,639 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:06,639 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:06,639 - INFO - Next query command executed - QueryType = 2, Query Number = 30
+2021-11-24 08:17:06,639 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:06,659 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:06,690 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:06,690 - INFO - RunSQL result [(563489,)]
+2021-11-24 08:17:06,701 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563489 ,function: 
+2021-11-24 08:17:06,722 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:06,722 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563489
+2021-11-24 08:17:06,722 - INFO - RunSQL result [('1761153044',)]
+2021-11-24 08:17:06,733 - INFO - GetRandomPatientSmallSite: Found matching patient 1761153044
+2021-11-24 08:17:06,733 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1761153044).
+2021-11-24 08:17:06,733 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1761153044
+2021-11-24 08:17:06,733 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query631.txt for writing...
+2021-11-24 08:17:06,733 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:06,733 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query631.txt']
+2021-11-24 08:17:07,039 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query631.txt']
+2021-11-24 08:17:07,039 - DEBUG - Query took 0.31 sec
+2021-11-24 08:17:07,039 - DEBUG - Query Results: 2, 0.31
+2021-11-24 08:17:07,039 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:07,049 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:07', 2, 0.31]
+2021-11-24 08:17:08,372 - INFO - finishTime=1.73
+2021-11-24 08:17:08,372 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:08,372 - INFO - Next query command executed - QueryType = 1, Query Number = 31
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:08,372 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:08,372 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:08,372 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query890.txt']
+2021-11-24 08:17:09,773 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query890.txt']
+2021-11-24 08:17:09,773 - DEBUG - Query took 1.4 sec
+2021-11-24 08:17:09,773 - DEBUG - Query Results: 1, 1.4
+2021-11-24 08:17:09,773 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:09,773 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:09', 1, 1.4]
+2021-11-24 08:17:10,106 - INFO - finishTime=1.73
+2021-11-24 08:17:10,106 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:10,106 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:10,106 - INFO - Next query command executed - QueryType = 3, Query Number = 32
+2021-11-24 08:17:10,106 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:10,137 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:10,167 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:10,167 - INFO - RunSQL result [(568732,)]
+2021-11-24 08:17:10,167 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 568732 ,function: 
+2021-11-24 08:17:10,189 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:10,189 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 568732
+2021-11-24 08:17:10,189 - INFO - RunSQL result [('1.2.840.113704.7.1.0.1221471207322844.1637733153.3',)]
+2021-11-24 08:17:10,189 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.1221471207322844.1637733153.3
+2021-11-24 08:17:10,189 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.1221471207322844.1637733153.3
+2021-11-24 08:17:10,189 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1092.txt for writing...
+2021-11-24 08:17:10,189 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:10,189 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1092.txt']
+2021-11-24 08:17:10,442 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1092.txt']
+2021-11-24 08:17:10,443 - DEBUG - Query took 0.25 sec
+2021-11-24 08:17:10,443 - DEBUG - Query Results: 3, 0.25
+2021-11-24 08:17:10,443 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:10,448 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:10', 3, 0.25]
+2021-11-24 08:17:11,837 - INFO - finishTime=1.73
+2021-11-24 08:17:11,837 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:11,837 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:11,837 - INFO - Next query command executed - QueryType = 2, Query Number = 33
+2021-11-24 08:17:11,837 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:11,859 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:11,891 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:11,891 - INFO - RunSQL result [(561201,)]
+2021-11-24 08:17:11,891 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 561201 ,function: 
+2021-11-24 08:17:11,929 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:11,929 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 561201
+2021-11-24 08:17:11,929 - INFO - RunSQL result [('2323351735',)]
+2021-11-24 08:17:11,929 - INFO - GetRandomPatientSmallSite: Found matching patient 2323351735
+2021-11-24 08:17:11,929 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=2323351735).
+2021-11-24 08:17:11,929 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 2323351735
+2021-11-24 08:17:11,929 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1144.txt for writing...
+2021-11-24 08:17:11,929 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:11,929 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1144.txt']
+2021-11-24 08:17:12,227 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1144.txt']
+2021-11-24 08:17:12,227 - DEBUG - Query took 0.3 sec
+2021-11-24 08:17:12,227 - DEBUG - Query Results: 2, 0.3
+2021-11-24 08:17:12,227 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:12,227 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:12', 2, 0.3]
+2021-11-24 08:17:13,569 - INFO - finishTime=1.73
+2021-11-24 08:17:13,569 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:13,569 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:13,569 - INFO - Next query command executed - QueryType = 3, Query Number = 34
+2021-11-24 08:17:13,569 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:13,598 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:13,629 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:13,629 - INFO - RunSQL result [(565581,)]
+2021-11-24 08:17:13,629 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 565581 ,function: 
+2021-11-24 08:17:13,650 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:13,650 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 565581
+2021-11-24 08:17:13,650 - INFO - RunSQL result [('1.2.840.113704.7.1.0.23459165248132235.1637726103.3',)]
+2021-11-24 08:17:13,650 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.23459165248132235.1637726103.3
+2021-11-24 08:17:13,650 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.23459165248132235.1637726103.3
+2021-11-24 08:17:13,650 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1345.txt for writing...
+2021-11-24 08:17:13,660 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:13,660 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1345.txt']
+2021-11-24 08:17:14,038 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1345.txt']
+2021-11-24 08:17:14,038 - DEBUG - Query took 0.38 sec
+2021-11-24 08:17:14,038 - DEBUG - Query Results: 3, 0.38
+2021-11-24 08:17:14,038 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:14,038 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:14', 3, 0.38]
+2021-11-24 08:17:15,299 - INFO - finishTime=1.73
+2021-11-24 08:17:15,299 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:15,299 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:15,299 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:15,299 - INFO - Next query command executed - QueryType = 1, Query Number = 35
+2021-11-24 08:17:15,300 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:15,300 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:15,300 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:15,300 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:15,300 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:15,301 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1540.txt']
+2021-11-24 08:17:17,031 - INFO - finishTime=1.73
+2021-11-24 08:17:17,031 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:17,031 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:17,031 - INFO - Next query command executed - QueryType = 2, Query Number = 36
+2021-11-24 08:17:17,031 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:17,071 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:17,092 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:17,092 - INFO - RunSQL result [(560301,)]
+2021-11-24 08:17:17,102 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560301 ,function: 
+2021-11-24 08:17:17,123 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:17,123 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560301
+2021-11-24 08:17:17,123 - INFO - RunSQL result [('2354730257',)]
+2021-11-24 08:17:17,133 - INFO - GetRandomPatientSmallSite: Found matching patient 2354730257
+2021-11-24 08:17:17,133 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=2354730257).
+2021-11-24 08:17:17,133 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 2354730257
+2021-11-24 08:17:17,133 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query1729.txt for writing...
+2021-11-24 08:17:17,133 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:17,133 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1729.txt']
+2021-11-24 08:17:17,537 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1729.txt']
+2021-11-24 08:17:17,537 - DEBUG - Query took 0.4 sec
+2021-11-24 08:17:17,537 - DEBUG - Query Results: 2, 0.4
+2021-11-24 08:17:17,537 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:17,547 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:17', 2, 0.4]
+2021-11-24 08:17:18,762 - INFO - finishTime=1.73
+2021-11-24 08:17:18,762 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:18,762 - INFO - Next query command executed - QueryType = 1, Query Number = 37
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:18,762 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:18,762 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:18,762 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1846.txt']
+2021-11-24 08:17:19,341 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1540.txt']
+2021-11-24 08:17:19,341 - DEBUG - Query took 4.04 sec
+2021-11-24 08:17:19,341 - DEBUG - Query Results: 1, 4.04
+2021-11-24 08:17:19,341 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:19,351 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:19', 1, 4.04]
+2021-11-24 08:17:20,232 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query1846.txt']
+2021-11-24 08:17:20,242 - DEBUG - Query took 1.48 sec
+2021-11-24 08:17:20,242 - DEBUG - Query Results: 1, 1.48
+2021-11-24 08:17:20,242 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:20,242 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:20', 1, 1.48]
+2021-11-24 08:17:20,496 - INFO - finishTime=1.73
+2021-11-24 08:17:20,496 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:20,496 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:20,496 - INFO - Next query command executed - QueryType = 2, Query Number = 38
+2021-11-24 08:17:20,496 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:20,518 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:20,548 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:20,548 - INFO - RunSQL result [(563753,)]
+2021-11-24 08:17:20,558 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563753 ,function: 
+2021-11-24 08:17:20,578 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:20,578 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563753
+2021-11-24 08:17:20,578 - INFO - RunSQL result [('4219349018',)]
+2021-11-24 08:17:20,578 - INFO - GetRandomPatientSmallSite: Found matching patient 4219349018
+2021-11-24 08:17:20,578 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=4219349018).
+2021-11-24 08:17:20,578 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 4219349018
+2021-11-24 08:17:20,578 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2044.txt for writing...
+2021-11-24 08:17:20,578 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:20,578 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2044.txt']
+2021-11-24 08:17:20,827 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2044.txt']
+2021-11-24 08:17:20,827 - DEBUG - Query took 0.25 sec
+2021-11-24 08:17:20,827 - DEBUG - Query Results: 2, 0.25
+2021-11-24 08:17:20,827 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:20,837 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:20', 2, 0.25]
+2021-11-24 08:17:22,228 - INFO - finishTime=1.73
+2021-11-24 08:17:22,228 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:22,228 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:22,228 - INFO - Next query command executed - QueryType = 3, Query Number = 39
+2021-11-24 08:17:22,228 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:22,258 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:22,299 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:22,299 - INFO - RunSQL result [(563047,)]
+2021-11-24 08:17:22,300 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 563047 ,function: 
+2021-11-24 08:17:22,321 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:22,321 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 563047
+2021-11-24 08:17:22,321 - INFO - RunSQL result [('1.2.840.113704.7.1.0.206238204527206.1637720480.2',)]
+2021-11-24 08:17:22,321 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.206238204527206.1637720480.2
+2021-11-24 08:17:22,321 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.206238204527206.1637720480.2
+2021-11-24 08:17:22,321 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query2229.txt for writing...
+2021-11-24 08:17:22,331 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:22,331 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2229.txt']
+2021-11-24 08:17:22,577 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2229.txt']
+2021-11-24 08:17:22,577 - DEBUG - Query took 0.25 sec
+2021-11-24 08:17:22,577 - DEBUG - Query Results: 3, 0.25
+2021-11-24 08:17:22,577 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:22,588 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:22', 3, 0.25]
+2021-11-24 08:17:23,959 - INFO - finishTime=1.73
+2021-11-24 08:17:23,959 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:23,959 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:23,959 - INFO - Next query command executed - QueryType = 1, Query Number = 40
+2021-11-24 08:17:23,959 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:23,959 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:23,960 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:23,960 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:23,960 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:23,960 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:23,961 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2357.txt']
+2021-11-24 08:17:25,691 - INFO - finishTime=1.73
+2021-11-24 08:17:25,691 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:25,691 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:25,691 - INFO - Next query command executed - QueryType = 1, Query Number = 41
+2021-11-24 08:17:25,692 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:25,692 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:25,692 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:25,692 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:25,693 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:25,693 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:25,693 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2595.txt']
+2021-11-24 08:17:27,154 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2595.txt']
+2021-11-24 08:17:27,154 - DEBUG - Query took 1.46 sec
+2021-11-24 08:17:27,154 - DEBUG - Query Results: 1, 1.46
+2021-11-24 08:17:27,154 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:27,164 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:27', 1, 1.46]
+2021-11-24 08:17:27,422 - INFO - finishTime=1.73
+2021-11-24 08:17:27,422 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:27,422 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:27,422 - INFO - Next query command executed - QueryType = 1, Query Number = 42
+2021-11-24 08:17:27,422 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:27,423 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:27,423 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:27,423 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:27,423 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:27,424 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:27,424 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2784.txt']
+2021-11-24 08:17:28,001 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2357.txt']
+2021-11-24 08:17:28,001 - DEBUG - Query took 4.04 sec
+2021-11-24 08:17:28,001 - DEBUG - Query Results: 1, 4.04
+2021-11-24 08:17:28,001 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:28,001 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:28', 1, 4.04]
+2021-11-24 08:17:29,153 - INFO - finishTime=1.73
+2021-11-24 08:17:29,153 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:29,153 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:29,154 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:29,154 - INFO - Next query command executed - QueryType = 1, Query Number = 43
+2021-11-24 08:17:29,154 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:29,154 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:29,154 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:29,155 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:29,155 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:29,155 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2990.txt']
+2021-11-24 08:17:30,538 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2990.txt']
+2021-11-24 08:17:30,538 - DEBUG - Query took 1.38 sec
+2021-11-24 08:17:30,538 - DEBUG - Query Results: 1, 1.38
+2021-11-24 08:17:30,538 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:30,538 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:30', 1, 1.38]
+2021-11-24 08:17:30,888 - INFO - finishTime=1.74
+2021-11-24 08:17:30,889 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:30,889 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:30,889 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:30,889 - INFO - Next query command executed - QueryType = 1, Query Number = 44
+2021-11-24 08:17:30,889 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:30,890 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:30,890 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:30,890 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:30,890 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:30,890 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query309.txt']
+2021-11-24 08:17:31,497 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query2784.txt']
+2021-11-24 08:17:31,497 - DEBUG - Query took 4.07 sec
+2021-11-24 08:17:31,497 - DEBUG - Query Results: 1, 4.07
+2021-11-24 08:17:31,497 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:31,507 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:31', 1, 4.07]
+2021-11-24 08:17:32,620 - INFO - finishTime=1.73
+2021-11-24 08:17:32,620 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:32,620 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:32,620 - INFO - Next query command executed - QueryType = 2, Query Number = 45
+2021-11-24 08:17:32,620 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:32,650 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:32,670 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:32,670 - INFO - RunSQL result [(566122,)]
+2021-11-24 08:17:32,680 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566122 ,function: 
+2021-11-24 08:17:32,703 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:32,703 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566122
+2021-11-24 08:17:32,703 - INFO - RunSQL result [('808145046',)]
+2021-11-24 08:17:32,703 - INFO - GetRandomPatientSmallSite: Found matching patient 808145046
+2021-11-24 08:17:32,703 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=808145046).
+2021-11-24 08:17:32,703 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 808145046
+2021-11-24 08:17:32,703 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3250.txt for writing...
+2021-11-24 08:17:32,703 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:32,703 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3250.txt']
+2021-11-24 08:17:32,948 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3250.txt']
+2021-11-24 08:17:32,948 - DEBUG - Query took 0.24 sec
+2021-11-24 08:17:32,948 - DEBUG - Query Results: 2, 0.24
+2021-11-24 08:17:32,948 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:32,958 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:32', 2, 0.24]
+2021-11-24 08:17:34,351 - INFO - finishTime=1.73
+2021-11-24 08:17:34,351 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:34,351 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:34,351 - INFO - Next query command executed - QueryType = 3, Query Number = 46
+2021-11-24 08:17:34,351 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:34,371 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:34,402 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:34,403 - INFO - RunSQL result [(563063,)]
+2021-11-24 08:17:34,405 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 563063 ,function: 
+2021-11-24 08:17:34,444 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:34,444 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 563063
+2021-11-24 08:17:34,445 - INFO - RunSQL result [('1.2.840.113704.7.1.0.21410221420012067.1637720515.2',)]
+2021-11-24 08:17:34,447 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.21410221420012067.1637720515.2
+2021-11-24 08:17:34,447 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.21410221420012067.1637720515.2
+2021-11-24 08:17:34,447 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3457.txt for writing...
+2021-11-24 08:17:34,447 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:34,447 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3457.txt']
+2021-11-24 08:17:34,703 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3457.txt']
+2021-11-24 08:17:34,703 - DEBUG - Query took 0.26 sec
+2021-11-24 08:17:34,703 - DEBUG - Query Results: 3, 0.26
+2021-11-24 08:17:34,703 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:34,713 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:34', 3, 0.26]
+2021-11-24 08:17:34,938 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query309.txt']
+2021-11-24 08:17:34,938 - DEBUG - Query took 4.05 sec
+2021-11-24 08:17:34,938 - DEBUG - Query Results: 1, 4.05
+2021-11-24 08:17:34,938 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:34,938 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:34', 1, 4.05]
+2021-11-24 08:17:36,081 - INFO - finishTime=1.73
+2021-11-24 08:17:36,081 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:36,081 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:36,081 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:36,081 - INFO - Next query command executed - QueryType = 1, Query Number = 47
+2021-11-24 08:17:36,082 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:36,082 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:36,082 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:36,082 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:36,082 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:36,083 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3625.txt']
+2021-11-24 08:17:37,817 - INFO - finishTime=1.74
+2021-11-24 08:17:37,817 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:37,817 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:37,817 - INFO - Next query command executed - QueryType = 3, Query Number = 48
+2021-11-24 08:17:37,817 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:37,837 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:37,868 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:37,868 - INFO - RunSQL result [(565427,)]
+2021-11-24 08:17:37,868 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 565427 ,function: 
+2021-11-24 08:17:37,890 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:37,890 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 565427
+2021-11-24 08:17:37,890 - INFO - RunSQL result [('1.2.840.113704.7.1.0.905216435233248.1637725776.2',)]
+2021-11-24 08:17:37,890 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.905216435233248.1637725776.2
+2021-11-24 08:17:37,890 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.905216435233248.1637725776.2
+2021-11-24 08:17:37,890 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3786.txt for writing...
+2021-11-24 08:17:37,890 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:37,890 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3786.txt']
+2021-11-24 08:17:38,163 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3786.txt']
+2021-11-24 08:17:38,163 - DEBUG - Query took 0.27 sec
+2021-11-24 08:17:38,163 - DEBUG - Query Results: 3, 0.27
+2021-11-24 08:17:38,163 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:38,163 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:38', 3, 0.27]
+2021-11-24 08:17:39,547 - INFO - finishTime=1.73
+2021-11-24 08:17:39,547 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:39,547 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:39,547 - INFO - Next query command executed - QueryType = 3, Query Number = 49
+2021-11-24 08:17:39,547 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:39,567 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:39,600 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:39,600 - INFO - RunSQL result [(565318,)]
+2021-11-24 08:17:39,610 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 565318 ,function: 
+2021-11-24 08:17:39,630 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:39,630 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 565318
+2021-11-24 08:17:39,630 - INFO - RunSQL result [('1.2.840.113704.7.1.0.2342351177468178.1637725546.3',)]
+2021-11-24 08:17:39,640 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.2342351177468178.1637725546.3
+2021-11-24 08:17:39,640 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.2342351177468178.1637725546.3
+2021-11-24 08:17:39,640 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query3984.txt for writing...
+2021-11-24 08:17:39,640 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:39,640 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3984.txt']
+2021-11-24 08:17:40,002 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3984.txt']
+2021-11-24 08:17:40,002 - DEBUG - Query took 0.36 sec
+2021-11-24 08:17:40,002 - DEBUG - Query Results: 3, 0.36
+2021-11-24 08:17:40,002 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:40,002 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:40', 3, 0.36]
+2021-11-24 08:17:40,138 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query3625.txt']
+2021-11-24 08:17:40,138 - DEBUG - Query took 4.06 sec
+2021-11-24 08:17:40,138 - DEBUG - Query Results: 1, 4.06
+2021-11-24 08:17:40,138 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:40,138 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:40', 1, 4.06]
+2021-11-24 08:17:41,280 - INFO - finishTime=1.73
+2021-11-24 08:17:41,280 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:41,280 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:41,280 - INFO - Next query command executed - QueryType = 2, Query Number = 50
+2021-11-24 08:17:41,280 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:41,302 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:41,332 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:41,332 - INFO - RunSQL result [(560958,)]
+2021-11-24 08:17:41,332 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560958 ,function: 
+2021-11-24 08:17:41,362 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:41,362 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 560958
+2021-11-24 08:17:41,362 - INFO - RunSQL result [('3147228398',)]
+2021-11-24 08:17:41,372 - INFO - GetRandomPatientSmallSite: Found matching patient 3147228398
+2021-11-24 08:17:41,372 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=3147228398).
+2021-11-24 08:17:41,372 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 3147228398
+2021-11-24 08:17:41,372 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4178.txt for writing...
+2021-11-24 08:17:41,372 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:41,372 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4178.txt']
+2021-11-24 08:17:41,629 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4178.txt']
+2021-11-24 08:17:41,629 - DEBUG - Query took 0.26 sec
+2021-11-24 08:17:41,629 - DEBUG - Query Results: 2, 0.26
+2021-11-24 08:17:41,629 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:41,629 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:41', 2, 0.26]
+2021-11-24 08:17:43,010 - INFO - finishTime=1.73
+2021-11-24 08:17:43,010 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:43,010 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:43,010 - INFO - Next query command executed - QueryType = 2, Query Number = 51
+2021-11-24 08:17:43,010 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:43,040 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:43,060 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:43,060 - INFO - RunSQL result [(566386,)]
+2021-11-24 08:17:43,070 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566386 ,function: 
+2021-11-24 08:17:43,091 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:43,091 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 566386
+2021-11-24 08:17:43,091 - INFO - RunSQL result [('4204638620',)]
+2021-11-24 08:17:43,091 - INFO - GetRandomPatientSmallSite: Found matching patient 4204638620
+2021-11-24 08:17:43,091 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=4204638620).
+2021-11-24 08:17:43,091 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 4204638620
+2021-11-24 08:17:43,091 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4371.txt for writing...
+2021-11-24 08:17:43,091 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:43,091 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4371.txt']
+2021-11-24 08:17:43,398 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4371.txt']
+2021-11-24 08:17:43,398 - DEBUG - Query took 0.31 sec
+2021-11-24 08:17:43,399 - DEBUG - Query Results: 2, 0.31
+2021-11-24 08:17:43,399 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:43,404 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:43', 2, 0.31]
+2021-11-24 08:17:44,743 - INFO - finishTime=1.73
+2021-11-24 08:17:44,743 - DEBUG - SPT_QUERY_RUN:
+Query type = 1
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: QueryQido STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: Query STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:44,743 - INFO - Next query command executed - QueryType = 1, Query Number = 52
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: Opening {} for writing...
+2021-11-24 08:17:44,743 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: QueryQido: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: Query: STUDY_DATE 20211121-
+TAMAR_STUDY_STATUS UNREAD
+MODALITIES_IN_STUDY CR
+2021-11-24 08:17:44,743 - DEBUG - BuildTagNameCommonQuery: Opening $SPT_TOOL_QUERY for writing...
+2021-11-24 08:17:44,743 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4440.txt']
+2021-11-24 08:17:46,107 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4440.txt']
+2021-11-24 08:17:46,107 - DEBUG - Query took 1.36 sec
+2021-11-24 08:17:46,107 - DEBUG - Query Results: 1, 1.36
+2021-11-24 08:17:46,107 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:46,107 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:46', 1, 1.36]
+2021-11-24 08:17:46,473 - INFO - finishTime=1.73
+2021-11-24 08:17:46,473 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:46,473 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:46,473 - INFO - Next query command executed - QueryType = 2, Query Number = 53
+2021-11-24 08:17:46,474 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:46,495 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:46,517 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:46,517 - INFO - RunSQL result [(563187,)]
+2021-11-24 08:17:46,527 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563187 ,function: 
+2021-11-24 08:17:46,557 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:46,557 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 563187
+2021-11-24 08:17:46,557 - INFO - RunSQL result [('1682602117',)]
+2021-11-24 08:17:46,557 - INFO - GetRandomPatientSmallSite: Found matching patient 1682602117
+2021-11-24 08:17:46,557 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=1682602117).
+2021-11-24 08:17:46,557 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 1682602117
+2021-11-24 08:17:46,557 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4634.txt for writing...
+2021-11-24 08:17:46,557 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:46,557 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4634.txt']
+2021-11-24 08:17:46,814 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4634.txt']
+2021-11-24 08:17:46,814 - DEBUG - Query took 0.26 sec
+2021-11-24 08:17:46,814 - DEBUG - Query Results: 2, 0.26
+2021-11-24 08:17:46,814 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:46,814 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:46', 2, 0.26]
+2021-11-24 08:17:48,206 - INFO - finishTime=1.73
+2021-11-24 08:17:48,206 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-11-24 08:17:48,206 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:48,206 - INFO - Next query command executed - QueryType = 3, Query Number = 54
+2021-11-24 08:17:48,207 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:48,227 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:48,258 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 558952 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:48,258 - INFO - RunSQL result [(569115,)]
+2021-11-24 08:17:48,258 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 569115 ,function: 
+2021-11-24 08:17:48,278 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:48,278 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 569115
+2021-11-24 08:17:48,278 - INFO - RunSQL result [('1.2.840.113704.7.1.0.1954320522010363.1637733965.3',)]
+2021-11-24 08:17:48,289 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.1954320522010363.1637733965.3
+2021-11-24 08:17:48,289 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.1954320522010363.1637733965.3
+2021-11-24 08:17:48,289 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4890.txt for writing...
+2021-11-24 08:17:48,290 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-11-24 08:17:48,290 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4890.txt']
+2021-11-24 08:17:48,544 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'SERIES', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4890.txt']
+2021-11-24 08:17:48,544 - DEBUG - Query took 0.25 sec
+2021-11-24 08:17:48,544 - DEBUG - Query Results: 3, 0.25
+2021-11-24 08:17:48,544 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:48,554 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:48', 3, 0.25]
+2021-11-24 08:17:49,938 - INFO - finishTime=1.73
+2021-11-24 08:17:49,938 - DEBUG - SPT_QUERY_RUN:
+Query type = 2
+2021-11-24 08:17:49,938 - INFO - RunSQL query: SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-11-24 08:17:49,938 - INFO - Next query command executed - QueryType = 2, Query Number = 55
+2021-11-24 08:17:49,938 - INFO - Sleep Duration : {SleepDuration} seconds, NOW sleeping...
+2021-11-24 08:17:49,958 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:49,989 - INFO - RunSQL run query SELECT patient_db_uid FROM (SELECT patient_db_uid FROM medistore.didb_patients WHERE  PATIENT_DB_UID > 558952 AND NUMBER_OF_PATIENT_STUDIES > 0 ORDER BY dbms_random.value) WHERE rownum = 1
+2021-11-24 08:17:49,989 - INFO - RunSQL result [(568931,)]
+2021-11-24 08:17:49,989 - INFO - RunSQL query: select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 568931 ,function: 
+2021-11-24 08:17:50,010 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.10.10.100)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-11-24 08:17:50,010 - INFO - RunSQL run query select FALLBACK_PID from medistore.didb_patients_view where patient_db_uid = 568931
+2021-11-24 08:17:50,010 - INFO - RunSQL result [('4111013961',)]
+2021-11-24 08:17:50,020 - INFO - GetRandomPatientSmallSite: Found matching patient 4111013961
+2021-11-24 08:17:50,020 - DEBUG - GetRandomPatientSmallSite: Finished (PatientId=4111013961).
+2021-11-24 08:17:50,020 - DEBUG - BuildTagNamePatientsPrior: Query:PATIENT_ID 4111013961
+2021-11-24 08:17:50,020 - DEBUG - BuildTagNamePatientsPrior: Opening C:\Users\rhirsch\AppData\Local\Temp/spt_tool_query4991.txt for writing...
+2021-11-24 08:17:50,020 - DEBUG - BuildTagNamePatientsPrior: Finihsed.
+2021-11-24 08:17:50,020 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4991.txt']
+2021-11-24 08:17:50,459 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'wfmpriFIR', '-l', 'STUDY', '-t', 'C:\\Users\\rhirsch\\AppData\\Local\\Temp/spt_tool_query4991.txt']
+2021-11-24 08:17:50,459 - DEBUG - Query took 0.44 sec
+2021-11-24 08:17:50,459 - DEBUG - Query Results: 2, 0.44
+2021-11-24 08:17:50,460 - INFO - Create Csv - Create CSV Path : C:\Users\rhirsch\Desktop\SPT\results\wfmpri\Query\spt_query_result_wfmpri_wfmsat2.CSV
+2021-11-24 08:17:50,476 - INFO - Create Csv - append to Csv : ['2021-11-24 08:17:50', 2, 0.44]

@@ -1,0 +1,5 @@
+Scenario,Test Number,Limit,Output Format,Query Level,Study Instance UID,Series Instance UID,Include Fields
+1,1,30,xml,instances,1.2.840.113704.7.1.0.133762817813446.1570451659.3,1.2.840.113704.7.1.0.133762817813446.1570451659.1,
+2,2,4,xml,series,1.2.840.113704.7.1.0.133762817813446.1570451659.3,,a
+3,2,4,xml,instances,1.2.840.113704.7.1.0.133762817813446.1570451659.3,,a
+4,3,10,json,patients,,,a

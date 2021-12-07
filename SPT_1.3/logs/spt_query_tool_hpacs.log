@@ -1,0 +1,40 @@
+2021-10-20 17:43:09,417 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-10-20 17:43:09,427 - INFO - Logging level: 10
+2021-10-20 17:43:09,427 - INFO - Sleep duration: 2.59
+2021-10-20 17:43:09,427 - INFO - ActualCommand: C:\PROGRA~1\CAREST~1\System5\utils\tool_verify.exe -c hpacsFIR
+2021-10-20 17:43:10,117 - INFO - ActualCommand: C:\PROGRA~1\CAREST~1\System5\utils\tool_verify.exe -c hpacsFIR
+2021-10-20 17:43:10,127 - INFO - Tool_verify_test hpacsFIR is  responding to DICOM verify
+2021-10-20 17:43:10,127 - INFO - RunSQL query: select max(study_db_uid) from medistore.didb_studies ,function: 
+2021-10-20 17:43:10,217 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.3.200.65)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-10-20 17:43:10,217 - INFO - RunSQL run query select max(study_db_uid) from medistore.didb_studies
+2021-10-20 17:43:10,217 - INFO - RunSQL result [(161,)]
+2021-10-20 17:43:10,227 - INFO - RunSQL query: select max(patient_db_uid) from medistore.didb_patients ,function: 
+2021-10-20 17:43:10,277 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.3.200.65)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-10-20 17:43:10,277 - INFO - RunSQL run query select max(patient_db_uid) from medistore.didb_patients
+2021-10-20 17:43:10,277 - INFO - RunSQL result [(161,)]
+2021-10-20 17:43:10,277 - DEBUG - SPT_QUERY_RUN:
+Query type = 3
+2021-10-20 17:43:10,277 - INFO - RunSQL query: SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 125 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1 ,function: 
+2021-10-20 17:43:10,319 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.3.200.65)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-10-20 17:43:10,329 - INFO - RunSQL run query SELECT study_db_uid FROM (SELECT /*+NOPARALLEL(didb_studies) */ study_db_uid FROM medistore.didb_studies WHERE STUDY_DB_UID > 125 AND STUDY_ONLINE='Y' ORDER BY dbms_random.value) WHERE rownum = 1
+2021-10-20 17:43:10,329 - INFO - RunSQL result [(133,)]
+2021-10-20 17:43:10,329 - INFO - RunSQL query: select study_instance_uid from medistore.didb_studies where study_db_uid = 133 ,function: 
+2021-10-20 17:43:10,379 - INFO - RunSQL connected to (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=10.3.200.65)(Port=1521)))(CONNECT_DATA=(SID=mst1)))
+2021-10-20 17:43:10,379 - INFO - RunSQL run query select study_instance_uid from medistore.didb_studies where study_db_uid = 133
+2021-10-20 17:43:10,379 - INFO - RunSQL result [('1.2.840.113704.7.1.0.1751292421364144.1633523978.2',)]
+2021-10-20 17:43:10,389 - INFO - GetRandomStudySmallSite Found matching study 1.2.840.113704.7.1.0.1751292421364144.1633523978.2
+2021-10-20 17:43:10,389 - DEBUG - BuildTagNameExploreStudy: Query: STUDY_INSTANCE_UID 1.2.840.113704.7.1.0.1751292421364144.1633523978.2
+2021-10-20 17:43:10,389 - DEBUG - BuildTagNameExploreStudy: Opening C:\Users\ADMINI~1\AppData\Local\Temp/spt_tool_query1035.txt for writing...
+2021-10-20 17:43:10,389 - DEBUG - BuildTagNameExploreStudy: Finihsed.
+2021-10-20 17:43:10,389 - DEBUG - command: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'hpacsFIR', '-l', 'SERIES', '-t', 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp/spt_tool_query1035.txt']
+2021-10-20 17:43:11,089 - INFO - ActualCommand: ['C:\\PROGRA~1\\CAREST~1\\System5\\utils\\tool_query.exe', '-c', 'hpacsFIR', '-l', 'SERIES', '-t', 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp/spt_tool_query1035.txt']
+2021-10-20 17:43:11,099 - DEBUG - Query took 0.71 sec
+2021-10-20 17:43:11,099 - DEBUG - Query Results: 3, 0.71
+2021-10-20 17:43:11,099 - INFO - Create Csv - Create CSV Path : C:\Users\Administrator\Desktop\SPT_1.1\results\hpacs\Query\spt_query_result_hpacs_nsat03.CSV
+2021-10-20 17:43:11,099 - INFO - Create Csv - append to Csv : ['2021-10-20 17:43:11', 3, 0.71]
+2021-10-24 12:29:17,429 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-10-24 12:38:36,229 - INFO - ActualCommand: ['C:\\Python3\\python.exe', '-m', 'pip', 'freeze']
+2021-10-24 12:38:36,239 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-10-28 09:17:55,407 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-10-28 09:54:11,240 - CRITICAL - ====================================== running spt_query_tool.py ======================================
+2021-10-28 10:11:33,528 - CRITICAL - ====================================== running spt_query_tool.py ======================================

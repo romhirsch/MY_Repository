@@ -1,0 +1,4 @@
+filename,hostName,targetHostName,startTime,endTime
+spt_store_total_results_hpacs.CSV,281021103922_CSV,hpacs,2021-10-25 16:14:11,2021-10-28 10:20:55
+spt_load_total_results_hpacs.CSV,281021103922_CSV,hpacs,2021-10-27 15:24:27,2021-10-28 10:20:50
+spt_query_total_results_hpacs.CSV,281021103922_CSV,hpacs,2021-10-20 17:43:11,2021-10-28 10:20:57
