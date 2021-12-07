@@ -1,0 +1,40 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[QuitCallback]
+Class="Function"
+Prototype="int QuitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[invert_colors]
+Class="Function"
+Prototype="int invert_colors(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[load_image]
+Class="Function"
+Prototype="int load_image(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[restore_pixelArray]
+Class="Function"
+Prototype="void restore_pixelArray();"
+
+[Rotate_im]
+Class="Function"
+Prototype="int Rotate_im(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[mirrorY]
+Class="Function"
+Prototype="int mirrorY(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[rotate_angle]
+Class="Function"
+Prototype="int rotate_angle(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[save_image]
+Class="Function"
+Prototype="int save_image(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[mirrorX]
+Class="Function"
+Prototype="int mirrorX(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

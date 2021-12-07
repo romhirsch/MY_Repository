@@ -1,0 +1,11 @@
+[ALIAS]
+IDH_utils_html_main_file=utils.html
+
+[MAP]
+#define IDH_utils_html_main_file 1
+
+[FILES]
+utils.html
+utils_files\Alphabetical Function Index.html
+utils_files\Hierarchical Function Index.html
+utils_files\htmlhelp.css

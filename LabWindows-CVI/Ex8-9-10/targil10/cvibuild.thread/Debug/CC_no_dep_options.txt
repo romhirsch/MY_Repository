@@ -1,0 +1,1 @@
+-force-include-file "thread.c";"c:\Users\rom21\OneDrive\Desktop\SystemProg\thread\thread.c" 

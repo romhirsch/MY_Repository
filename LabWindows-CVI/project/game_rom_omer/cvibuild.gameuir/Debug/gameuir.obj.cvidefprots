@@ -1,0 +1,144 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[GAME]
+Class="Function"
+Prototype="int GAME(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[load_image]
+Class="Function"
+Prototype="int load_image(int tank_num);"
+
+[restore_pixelArray]
+Class="Function"
+Prototype="void restore_pixelArray();"
+
+[rotate_func]
+Class="Function"
+Prototype="int rotate_func();"
+
+[new_game]
+Class="Function"
+Prototype="int new_game();"
+
+[draw_game]
+Class="Function"
+Prototype="int draw_game(void *functionData);"
+
+[updateTankspeed]
+Class="Function"
+Prototype="int updateTankspeed(void *params);"
+
+[RotateOBJECT]
+Class="Function"
+Prototype="int RotateOBJECT(struct object *T, int state, int tank_num);"
+
+[threadSound]
+Class="Function"
+Prototype="int threadSound(void *params);"
+
+[confStatics]
+Class="Function"
+Prototype="int confStatics(void *params);"
+
+[displayWin]
+Class="Function"
+Prototype="int displayWin(struct object *T);"
+
+[displayLose]
+Class="Function"
+Prototype="int displayLose();"
+
+[create_hearts_element]
+Class="Function"
+Prototype="int create_hearts_element();"
+
+[create_run_element]
+Class="Function"
+Prototype="int create_run_element();"
+
+[create_shot_element]
+Class="Function"
+Prototype="int create_shot_element();"
+
+[shot]
+Class="Function"
+Prototype="int shot(void *param);"
+
+[move_tank2]
+Class="Function"
+Prototype="int move_tank2(struct object *T, int move);"
+
+[NewGame]
+Class="Function"
+Prototype="void NewGame(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[MyPolling]
+Class="Function"
+Prototype="void MyPolling();"
+
+[Config]
+Class="Function"
+Prototype="int Config();"
+
+[SendString]
+Class="Function"
+Prototype="int SendString(char *SendBuff);"
+
+[RecTimer]
+Class="Function"
+Prototype="int RecTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BAR_RS232]
+Class="Function"
+Prototype="void BAR_RS232(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[CB]
+Class="Function"
+Prototype="int CB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[how_to_play_func]
+Class="Function"
+Prototype="int how_to_play_func(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[new_game_button]
+Class="Function"
+Prototype="int new_game_button(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[QuitCallback]
+Class="Function"
+Prototype="int QuitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[menu_bar_sound_flag]
+Class="Function"
+Prototype="void menu_bar_sound_flag(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[QuitStatics]
+Class="Function"
+Prototype="int QuitStatics(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[QuitMain]
+Class="Function"
+Prototype="int QuitMain(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Statics]
+Class="Function"
+Prototype="void Statics(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[quitHow]
+Class="Function"
+Prototype="int quitHow(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[menu_bar_about]
+Class="Function"
+Prototype="void menu_bar_about(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[howtoplay_bar]
+Class="Function"
+Prototype="void howtoplay_bar(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[applycom]
+Class="Function"
+Prototype="int applycom(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

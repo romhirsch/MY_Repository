@@ -1,0 +1,20 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[myTimer]
+Class="Function"
+Prototype="int myTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Doitt]
+Class="Function"
+Prototype="int Doitt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[QuitCallback]
+Class="Function"
+Prototype="int QuitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GO]
+Class="Function"
+Prototype="int GO(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

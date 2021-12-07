@@ -1,0 +1,1 @@
+-force-include-file "image example.c";"c:\Users\rom21\OneDrive\Desktop\SystemProg\CVI\dudu_ziv_ex7\image example.c" 

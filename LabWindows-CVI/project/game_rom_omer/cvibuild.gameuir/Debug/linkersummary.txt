@@ -1,0 +1,12 @@
+gameuir.obj
+cvi.lib
+cvistart.lib
+kernel32.lib
+utils.lib
+wmp.obj
+cviauto.lib
+user32.lib
+uuid.lib
+EXE Symbol Module
+Exports Module
+Resource Module

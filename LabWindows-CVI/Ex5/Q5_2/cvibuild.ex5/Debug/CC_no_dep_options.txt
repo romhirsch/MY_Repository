@@ -1,0 +1,1 @@
+-force-include-file "ex5.c";"c:\Users\rom21\OneDrive\Desktop\SystemProg\Q5_2\ex5.c" -force-include-file "ex5.h";"c:\Users\rom21\OneDrive\Desktop\SystemProg\Q5_2\ex5.h" 

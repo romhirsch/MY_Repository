@@ -1,0 +1,20 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[QuitCallback]
+Class="Function"
+Prototype="int QuitCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[STARTCALLBACK]
+Class="Function"
+Prototype="int STARTCALLBACK(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TIMER]
+Class="Function"
+Prototype="int TIMER(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Q4_Clicker]
+Class="Function"
+Prototype="int Q4_Clicker(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
