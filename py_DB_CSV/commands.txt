@@ -1,0 +1,14 @@
+Expression: 
+
+Create
+select
+select
+
+
+create collector: 
+
+CREATE <table name>
+
+add value to collector:
+
+INSERT {"}
