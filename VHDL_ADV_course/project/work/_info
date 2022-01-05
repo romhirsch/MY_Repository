@@ -10,44 +10,42 @@ z2
 cModel Technology
 Z0 dC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project
 Eimage_tb
-Z1 w1638106020
-Z2 DPx4 work 13 img_proc_pack 0 22 C`JAK=V9zg6K?hn>;U>ln3
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 44
-R0
-Z7 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/image_tb.vhd
-Z8 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/image_tb.vhd
+Z1 w1639587300
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 768
+Z6 dC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project
+Z7 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/image_tb.vhd
+Z8 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/image_tb.vhd
 l0
-L9 1
-VjP;I8`WcCe?F4zEf?nc]E1
-!s100 7>Y<o?iWf53zPEKG<o<Me3
+L8 1
+V3<h1WzQl[6M65I?QQ3P]Z3
+!s100 B=K<ULFjd7j7^ZK`K4:8<3
 Z9 OV;C;2020.1;71
 32
-Z10 !s110 1638108289
+Z10 !s110 1640439937
 !i10b 1
-Z11 !s108 1638108289.000000
-Z12 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/image_tb.vhd|
-Z13 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/image_tb.vhd|
+Z11 !s108 1640439937.000000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/image_tb.vhd|
+Z13 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/image_tb.vhd|
 !i113 1
 Z14 o-work work
 Z15 tExplicit 1 CvgOpt 0
 Aarc_image_tb
-Z16 DEx4 work 6 m_of_m 0 22 ;j?T?GzL=0?3^HHghbXdW0
-Z17 DEx4 work 11 median_comp 0 22 ]560ZVbL6[5=@TJ2DP?Yj1
+Z16 DPx4 work 13 img_proc_pack 0 22 9nGBkSHzkIW0_bG]KmGe>0
+Z17 DEx4 work 14 project_filter 0 22 NHBIfH^OiAnTm>ILJR^P72
 R2
 R3
 R4
 R5
-R6
-DEx4 work 8 image_tb 0 22 jP;I8`WcCe?F4zEf?nc]E1
-!i122 44
-l43
-L12 70
-Ve<WYR>J;HaQ7jMh6<gdjN2
-!s100 z<Z8RLA<WzEkSl;67bKJb0
+DEx4 work 8 image_tb 0 22 3<h1WzQl[6M65I?QQ3P]Z3
+!i122 768
+l32
+L12 48
+VUI6nFC7g:F>lB8_67FBWB2
+!s100 ddLB`j_@hkPRV]N5WhU`R0
 R9
 32
 R10
@@ -59,37 +57,37 @@ R13
 R14
 R15
 Pimg_proc_pack
+R4
 R5
+!i122 769
+Z18 w1639314948
 R6
-!i122 45
-Z18 w1638104643
-R0
-Z19 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/img_proc_pack.vhd
-Z20 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/img_proc_pack.vhd
+Z19 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/img_proc_pack.vhd
+Z20 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/img_proc_pack.vhd
 l0
 L4 1
-VC`JAK=V9zg6K?hn>;U>ln3
-!s100 MTPj8JX29aSGceD^2=Nd^3
+V9nGBkSHzkIW0_bG]KmGe>0
+!s100 Q3:C5j8:bFZgYVN<zD@Kg3
 R9
 32
 b1
 R10
 !i10b 1
 R11
-Z21 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/img_proc_pack.vhd|
-Z22 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/img_proc_pack.vhd|
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/img_proc_pack.vhd|
+Z22 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/img_proc_pack.vhd|
 !i113 1
 R14
 R15
 Bbody
-R2
+R16
+R4
 R5
-R6
-!i122 45
+!i122 769
 l0
-L23 1
-VAS<TVL<n1cDL63;Wk_3S<0
-!s100 =[MVe3ZWZZ[BlK6o7o@oa0
+L26 1
+V>g;VK1n8z4`3j39UVj`XB0
+!s100 9hnMkM@[^kD0hJgdO8<JC0
 R9
 32
 R10
@@ -102,185 +100,541 @@ R14
 R15
 Em_of_m
 Z23 w1638105826
+R16
 R2
 R3
 R4
 R5
+!i122 770
 R6
-!i122 46
-R0
-Z24 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/m_of_m.vhd
-Z25 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/m_of_m.vhd
+Z24 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/m_of_m.vhd
+Z25 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/m_of_m.vhd
 l0
 L9 1
 V;j?T?GzL=0?3^HHghbXdW0
 !s100 AdgbFXdB9kG:8??VI10mk3
 R9
 32
-Z26 !s110 1638108290
+R10
 !i10b 1
 R11
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/m_of_m.vhd|
-Z28 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/m_of_m.vhd|
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/m_of_m.vhd|
+Z27 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/m_of_m.vhd|
 !i113 1
 R14
 R15
 Aarc_m_of_m
+R16
 R2
 R3
 R4
 R5
-R6
-R16
-!i122 46
+DEx4 work 6 m_of_m 0 22 ;j?T?GzL=0?3^HHghbXdW0
+!i122 770
 l18
 L16 7
 Vkh__V:kfQKJZBb1OzMIVl1
 !s100 MVaL@m^Uh?:EIM1U1i8nV1
 R9
 32
-R26
+R10
 !i10b 1
 R11
+R26
 R27
-R28
 !i113 1
 R14
 R15
 Emedian_comp
-Z29 w1638105695
+Z28 w1638105695
+R16
 R2
 R3
 R4
 R5
+!i122 771
 R6
-!i122 47
-R0
-Z30 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/median_comp.vhd
-Z31 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/median_comp.vhd
+Z29 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_comp.vhd
+Z30 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_comp.vhd
 l0
 L9 1
 V]560ZVbL6[5=@TJ2DP?Yj1
 !s100 lm;P5KcZY33QJ@J=OlXHA1
 R9
 32
-R26
+Z31 !s110 1640439938
 !i10b 1
-Z32 !s108 1638108290.000000
-Z33 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/median_comp.vhd|
-Z34 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/median_comp.vhd|
+R11
+Z32 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_comp.vhd|
+Z33 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_comp.vhd|
 !i113 1
 R14
 R15
 Aarc_median_comp
+R16
 R2
 R3
 R4
 R5
-R6
-R17
-!i122 47
+DEx4 work 11 median_comp 0 22 ]560ZVbL6[5=@TJ2DP?Yj1
+!i122 771
 l18
 L16 8
 V:J>d[QD4g39YJzzhef^TD1
 !s100 `iL1]:USSObHPP5?[zWd00
 R9
 32
-R26
+R31
 !i10b 1
+R11
 R32
 R33
-R34
+!i113 1
+R14
+R15
+Emif2raw_hex
+Z34 w1639587723
+Z35 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R2
+R3
+R4
+R5
+!i122 747
+R0
+Z36 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/mif2raw_hex.vhd
+Z37 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/mif2raw_hex.vhd
+l0
+L8 1
+VMCV1AZU83Q4F_]HL4Xe1m2
+!s100 ;4[IH2f[>E2:6HDLKAU7S1
+R9
+32
+Z38 !s110 1639587731
+!i10b 1
+Z39 !s108 1639587731.000000
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/mif2raw_hex.vhd|
+Z41 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/mif2raw_hex.vhd|
+!i113 1
+R14
+R15
+Aarc_mif2raw_hex
+R35
+R2
+R3
+R4
+R5
+DEx4 work 11 mif2raw_hex 0 22 MCV1AZU83Q4F_]HL4Xe1m2
+!i122 747
+l60
+L22 107
+VPPDTX=m`dWkWULm0?eChK2
+!s100 Gf[6TWALH<l`l]giJkCjf0
+R9
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R14
+R15
+Emif_test
+Z42 w1639306383
+R35
+R2
+R3
+R4
+R5
+!i122 772
+R6
+Z43 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/mif_test.vhd
+Z44 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/mif_test.vhd
+l0
+L8 1
+VJlz^6P<j2iIU11[nQ?f9`2
+!s100 ^zaJ;i:X=8FZU6UR@cPzl3
+R9
+32
+R31
+!i10b 1
+Z45 !s108 1640439938.000000
+Z46 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/mif_test.vhd|
+Z47 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/mif_test.vhd|
+!i113 1
+R14
+R15
+Aarc_mif_test
+R35
+R2
+R3
+R4
+R5
+DEx4 work 8 mif_test 0 22 Jlz^6P<j2iIU11[nQ?f9`2
+!i122 772
+l19
+L18 42
+VVUhzkNYZXknDf0e_dEIMd2
+!s100 3jamQX@bDEAG41Kjj81^o0
+R9
+32
+R31
+!i10b 1
+R45
+R46
+R47
+!i113 1
+R14
+R15
+Eproject_filter
+Z48 w1640186841
+R16
+R2
+R3
+R4
+R5
+!i122 773
+R6
+Z49 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/project_filter.vhd
+Z50 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/project_filter.vhd
+l0
+L9 1
+VNHBIfH^OiAnTm>ILJR^P72
+!s100 U2X43DI9=:>XK5^ZEh?QB3
+R9
+32
+R31
+!i10b 1
+R45
+Z51 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/project_filter.vhd|
+Z52 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/project_filter.vhd|
+!i113 1
+R14
+R15
+Aarc_project_filter
+R16
+R2
+R3
+R4
+R5
+R17
+!i122 773
+l105
+L25 265
+VHo5SVQJ`403@kEMMBnjTL3
+!s100 >IRcIQ5Z8AE`=h5zTEA?R0
+R9
+32
+R31
+!i10b 1
+R45
+R51
+R52
+!i113 1
+R14
+R15
+Eram_b_1280_256
+Z53 w1638980844
+Z54 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+R4
+R5
+!i122 774
+R6
+Z55 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_B_1280_256.vhd
+Z56 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_B_1280_256.vhd
+l0
+Z57 L42 1
+V0aK<9e<e6GNO4VE<Rf=2i1
+!s100 ^CeUhWT@zjaCJQ28g1cYj2
+R9
+32
+R31
+!i10b 1
+R45
+Z58 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_B_1280_256.vhd|
+Z59 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_B_1280_256.vhd|
+!i113 1
+R14
+R15
+Asyn
+R54
+R4
+R5
+DEx4 work 14 ram_b_1280_256 0 22 0aK<9e<e6GNO4VE<Rf=2i1
+!i122 774
+l58
+Z60 L54 35
+VC5A8OKnTM>6@>naa:ZdRX2
+!s100 >]V37BdHjQWlNc2X^Xa0f2
+R9
+32
+R31
+!i10b 1
+R45
+R58
+R59
+!i113 1
+R14
+R15
+Eram_g_1280_256
+Z61 w1638980853
+R54
+R4
+R5
+!i122 775
+R6
+Z62 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_G_1280_256.vhd
+Z63 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_G_1280_256.vhd
+l0
+R57
+Vl8kl@O7UZQiGjkU=RnN>e0
+!s100 Y_MaTPJ`JG;G9hnejgTYN1
+R9
+32
+R31
+!i10b 1
+R45
+Z64 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_G_1280_256.vhd|
+Z65 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_G_1280_256.vhd|
+!i113 1
+R14
+R15
+Asyn
+R54
+R4
+R5
+DEx4 work 14 ram_g_1280_256 0 22 l8kl@O7UZQiGjkU=RnN>e0
+!i122 775
+l58
+R60
+V3Hha1N<^[:G]zKzI?Z<@H0
+!s100 d9CPec>:g8OBLCz8U2O@42
+R9
+32
+R31
+!i10b 1
+R45
+R64
+R65
+!i113 1
+R14
+R15
+Eram_r_1280_256
+Z66 w1638980822
+R54
+R4
+R5
+!i122 776
+R6
+Z67 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_R_1280_256.vhd
+Z68 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_R_1280_256.vhd
+l0
+R57
+VF[[KolQ3G1;>J7mhLFgW_3
+!s100 eW]<fP5n^^O>YW8Wl<<WE3
+R9
+32
+R31
+!i10b 1
+R45
+Z69 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_R_1280_256.vhd|
+Z70 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/RAM_R_1280_256.vhd|
+!i113 1
+R14
+R15
+Asyn
+R54
+R4
+R5
+DEx4 work 14 ram_r_1280_256 0 22 F[[KolQ3G1;>J7mhLFgW_3
+!i122 776
+l58
+R60
+VjVE9z95oOP80NLUmR[:jL0
+!s100 3^eP3K?LKR[IT=8fHI:CU1
+R9
+32
+R31
+!i10b 1
+R45
+R69
+R70
 !i113 1
 R14
 R15
 Eraw2mif
-Z35 w1638108283
-Z36 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z71 w1638108283
+R35
+R2
 R3
 R4
 R5
-R6
-!i122 48
+!i122 752
 R0
-Z37 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd
-Z38 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd
+Z72 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd
+Z73 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd
 l0
 L8 1
 VUR0oQ5a4`EGN;3jTf:j411
 !s100 CD4Efo3BZD;PGJPEP:kR[3
 R9
 32
-R26
+Z74 !s110 1639587732
 !i10b 1
-R32
-Z39 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd|
-Z40 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd|
+Z75 !s108 1639587732.000000
+Z76 !s90 -reportprogress|30|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd|
+Z77 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/raw2mif.vhd|
 !i113 1
 R14
 R15
 Aarc_raw2mif
-R36
+R35
+R2
 R3
 R4
 R5
-R6
 DEx4 work 7 raw2mif 0 22 UR0oQ5a4`EGN;3jTf:j411
-!i122 48
+!i122 752
 l60
 L22 155
 VE5DR;h80dI:5^>1B53BB91
 !s100 6UL6mG:1U=TG07AHWS>=d3
 R9
 32
-R26
+R74
 !i10b 1
-R32
-R39
-R40
+R75
+R76
+R77
 !i113 1
 R14
 R15
-Erom_r_1280_256
-Z41 w1638107669
-Z42 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Erom_b_1280_256
+Z78 w1638108679
+R54
+R4
 R5
+!i122 777
 R6
-!i122 49
-R0
-Z43 8C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/ROM_R_1280_256.vhd
-Z44 FC:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/ROM_R_1280_256.vhd
+Z79 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_B_1280_256.vhd
+Z80 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_B_1280_256.vhd
 l0
-L43 1
-Vb@^i;1]oBE;IYI3H0;;FP2
-!s100 IRjU2nlfZ<f6;?o_1C0Gm0
+Z81 L43 1
+V`k_1iLVWV^7TIY?BKGDk>1
+!s100 nPFF<_WSnQdY]10HE[Qf11
 R9
 32
-R26
+R31
 !i10b 1
-R32
-Z45 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/ROM_R_1280_256.vhd|
-Z46 !s107 C:/Users/rom21/OneDrive/Desktop/VHDL_git/VHDL/project/ROM_R_1280_256.vhd|
+R45
+Z82 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_B_1280_256.vhd|
+Z83 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_B_1280_256.vhd|
 !i113 1
 R14
 R15
 Asyn
-R42
+R54
+R4
 R5
-R6
-Z47 DEx4 work 14 rom_r_1280_256 0 22 b@^i;1]oBE;IYI3H0;;FP2
-!i122 49
+DEx4 work 14 rom_b_1280_256 0 22 `k_1iLVWV^7TIY?BKGDk>1
+!i122 777
 l58
-Z48 L54 33
-Z49 VGjkX@bc]S4CLMeL_>hTiX3
-Z50 !s100 <S`l9`FoW9PzG8@;jm;6@0
+Z84 L54 33
+VRifki<kPPH1ijP6oh;OTe2
+!s100 <1=<VY^j^ldAbiloH_<[g3
 R9
 32
-R26
+R31
 !i10b 1
-R32
 R45
-R46
+R82
+R83
+!i113 1
+R14
+R15
+Erom_g_1280_256
+Z85 w1638108583
+R54
+R4
+R5
+!i122 778
+R6
+Z86 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_G_1280_256.vhd
+Z87 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_G_1280_256.vhd
+l0
+R81
+VHa8<zb5;SIWZcV<DB_fe:0
+!s100 jD??>K:ARAm=<IGP1WzaX0
+R9
+32
+R31
+!i10b 1
+R45
+Z88 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_G_1280_256.vhd|
+Z89 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_G_1280_256.vhd|
+!i113 1
+R14
+R15
+Asyn
+R54
+R4
+R5
+DEx4 work 14 rom_g_1280_256 0 22 Ha8<zb5;SIWZcV<DB_fe:0
+!i122 778
+l58
+R84
+V15DY1d^MX?fPTnWaSK5mT3
+!s100 mF4l:Ak@fAbD`f9f_k1mJ2
+R9
+32
+R31
+!i10b 1
+R45
+R88
+R89
+!i113 1
+R14
+R15
+Erom_r_1280_256
+Z90 w1638108471
+R54
+R4
+R5
+!i122 779
+R6
+Z91 8C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_R_1280_256.vhd
+Z92 FC:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_R_1280_256.vhd
+l0
+R81
+Vb@^i;1]oBE;IYI3H0;;FP2
+!s100 IRjU2nlfZ<f6;?o_1C0Gm0
+R9
+32
+Z93 !s110 1640439939
+!i10b 1
+R45
+Z94 !s90 -reportprogress|300|-work|work|C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_R_1280_256.vhd|
+Z95 !s107 C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/ROM_R_1280_256.vhd|
+!i113 1
+R14
+R15
+Asyn
+R54
+R4
+R5
+Z96 DEx4 work 14 rom_r_1280_256 0 22 b@^i;1]oBE;IYI3H0;;FP2
+!i122 779
+l58
+R84
+Z97 VWEiddE@KigYYZ9J`LG92L1
+Z98 !s100 U[V4T6f]^n_mooddhoERG1
+R9
+32
+R93
+!i10b 1
+R45
+R94
+R95
 !i113 1
 R14
 R15

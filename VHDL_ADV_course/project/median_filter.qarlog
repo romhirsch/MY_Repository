@@ -1,0 +1,39 @@
+Quartus Prime Archive log --	D:/project/median_filter.qarlog
+
+Archive:	D:/project/median_filter.qar
+Date:		Wed Dec 22 17:54:54 2021
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/project/RAM_B_1280_256.vhd
+D:/project/RAM_G_1280_256.vhd
+D:/project/RAM_R_1280_256.vhd
+D:/project/ROM_B_1280_256.vhd
+D:/project/ROM_G_1280_256.vhd
+D:/project/ROM_R_1280_256.vhd
+D:/project/b.mif
+D:/project/g.mif
+D:/project/img_proc_pack.vhd
+D:/project/m_of_m.vhd
+D:/project/median_comp.vhd
+D:/project/median_filter.qpf
+D:/project/median_filter.qsf
+D:/project/median_filter_assignment_defaults.qdf
+D:/project/project_filter.vhd
+D:/project/r.mif
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Dec 22 17:55:28 2021
+Source archive file:	D:/project/median_filter.qar
+Archive was extracted into	D:/project/median_filter_restored/
+		 - successfully.
+
+
+******* Archived project restoration attempt on Fri Dec 24 08:07:06 2021
+Source archive file:	C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_filter.qar
+Archive was extracted into	C:/Users/rom21/OneDrive/Documents/GitHub/MY_Repository/VHDL_ADV_course/project/median_filter_restored/
+		 - successfully.

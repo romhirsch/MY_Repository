@@ -38,8 +38,8 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY median_comp
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY project_filter
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:10:45  NOVEMBER 26, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -57,20 +57,20 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name SOURCE_FILE RAM_R_1280_256.cmp
-set_global_assignment -name QIP_FILE RAM_R_1280_256.qip
+set_global_assignment -name VHDL_FILE ROM_R_1280_256.vhd
+set_global_assignment -name VHDL_FILE ROM_G_1280_256.vhd
+set_global_assignment -name VHDL_FILE ROM_B_1280_256.vhd
 set_global_assignment -name VHDL_FILE RAM_R_1280_256.vhd
+set_global_assignment -name VHDL_FILE RAM_G_1280_256.vhd
+set_global_assignment -name VHDL_FILE RAM_B_1280_256.vhd
 set_global_assignment -name VHDL_FILE project_filter.vhd
-set_global_assignment -name SOURCE_FILE ROM_R_1280_256.cmp
-set_global_assignment -name SOURCE_FILE ROM_G_1280_256.cmp
-set_global_assignment -name SOURCE_FILE ROM_B_1280_256.cmp
 set_global_assignment -name VHDL_FILE m_of_m.vhd
-set_global_assignment -name VHDL_FILE image_tb.vhd
 set_global_assignment -name VHDL_FILE img_proc_pack.vhd
 set_global_assignment -name VHDL_FILE median_comp.vhd
-set_global_assignment -name VHDL_FILE raw2mif.vhd
-set_global_assignment -name QIP_FILE ROM_R_1280_256.qip
-set_global_assignment -name QIP_FILE ROM_G_1280_256.qip
-set_global_assignment -name QIP_FILE ROM_B_1280_256.qip
 set_global_assignment -name VHDL_FILE buffer.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

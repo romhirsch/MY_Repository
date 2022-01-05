@@ -1,5 +1,5 @@
 Flow report for median_filter
-Wed Dec 01 17:40:07 2021
+Wed Dec 22 17:37:20 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 01 17:40:07 2021       ;
+; Flow Status                        ; Successful - Wed Dec 22 17:37:20 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; median_filter                               ;
-; Top-level Entity Name              ; median_comp                                 ;
+; Top-level Entity Name              ; project_filter                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 378                                         ;
-;     Total combinational functions  ; 378                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 50                                          ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 51,716 / 114,480 ( 45 % )                   ;
+;     Total combinational functions  ; 50,639 / 114,480 ( 44 % )                   ;
+;     Dedicated logic registers      ; 19,498 / 114,480 ( 17 % )                   ;
+; Total registers                    ; 19498                                       ;
+; Total pins                         ; 4 / 529 ( < 1 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 1,966,080 / 3,981,312 ( 49 % )              ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -62,37 +64,36 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/01/2021 17:39:52 ;
+; Start date & time ; 12/22/2021 17:27:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; median_filter       ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                               ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 260248566306057.163837319214796        ; --            ; --          ; --                                ;
-; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; --          ; eda_design_synthesis              ;
-; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; --          ; eda_design_synthesis              ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MISC_FILE                           ; ROM_R_1280_256.cmp                     ; --            ; --          ; --                                ;
-; MISC_FILE                           ; ROM_G_1280_256.cmp                     ; --            ; --          ; --                                ;
-; MISC_FILE                           ; ROM_B_1280_256.cmp                     ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; median_comp ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; median_comp ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; median_comp ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; median_comp                            ; median_filter ; --          ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                  ;
++-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 260248566306057.164018684206688        ; --            ; --             ; --                                ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify                               ; <None>        ; --             ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_symbol           ;
+; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; --             ; eda_design_synthesis              ;
+; EDA_LMF_FILE                        ; synplcty.lmf                           ; --            ; --             ; eda_design_synthesis              ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --             ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --             ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; project_filter ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; project_filter ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; project_filter ; Top                               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --                                ;
+; TOP_LEVEL_ENTITY                    ; project_filter                         ; median_filter ; --             ; --                                ;
++-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -100,8 +101,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4793 MB             ; 00:00:33                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis ; 00:05:02     ; 1.0                     ; 5502 MB             ; 00:05:32                           ;
+; Fitter               ; 00:03:54     ; 1.1                     ; 6573 MB             ; 00:06:52                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4872 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:17     ; 1.5                     ; 5318 MB             ; 00:00:23                           ;
+; EDA Netlist Writer   ; 00:00:12     ; 1.0                     ; 4918 MB             ; 00:00:11                           ;
+; Total                ; 00:09:32     ; --                      ; --                  ; 00:13:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +116,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; 052-001          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; 052-001          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; 052-001          ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; 052-001          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; 052-001          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,6 +127,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off median_filter -c median_filter
+quartus_fit --read_settings_files=off --write_settings_files=off median_filter -c median_filter
+quartus_asm --read_settings_files=off --write_settings_files=off median_filter -c median_filter
+quartus_sta median_filter -c median_filter
+quartus_eda --read_settings_files=off --write_settings_files=off median_filter -c median_filter
 
 
 

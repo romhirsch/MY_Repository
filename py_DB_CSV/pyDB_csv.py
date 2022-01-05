@@ -15,11 +15,6 @@ SCRIPT_PATH = fr"C:\Users\rom21\OneDrive\Documents\GitHub\MY_Repository\py_DB_CS
 def connentDB(path):  
    pass 
 
-
-
-
-        
-
 class CsvDB:
     
     def __init__(self,name,headers,path=SCRIPT_PATH):
@@ -161,8 +156,8 @@ class collection(CsvDB):
 #%% main 
 
 
-csvfile = open(fr"C:\Users\rom21\OneDrive\Documents\GitHub\MY_Repository\py_DB_CSV\collections\text1.csv",newline = '')
-reader = csv.DictReader(csvfile)
+# csvfile = open(fr"C:\Users\rom21\OneDrive\Documents\GitHub\MY_Repository\py_DB_CSV\collections\text1.csv",newline = '')
+# reader = csv.DictReader(csvfile)
 
 # c1 = collection("text1")
 # c1.SetHeaders(["username","id"])
