@@ -5,7 +5,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.colors import NoNorm
 #%% functions 
-x= 5555
 
 def imageShow(im,  title="image"):
     """display image"""
