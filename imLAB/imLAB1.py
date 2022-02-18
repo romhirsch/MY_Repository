@@ -5,7 +5,11 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.colors import NoNorm
 #%% functions 
+<<<<<<< Updated upstream
 x= 111
+=======
+x=6
+>>>>>>> Stashed changes
 def imageShow(im,  title="image"):
     """display image"""
     cv.imshow(title, im)
