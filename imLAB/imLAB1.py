@@ -17,7 +17,12 @@ def uint8c(x):
     x2 = np.copy(x) 
     x2[x2 < 0] = 0 
     return np.uint8(x2)
-
+    
+def plotPlusImage(axP,axI,im,title):
+    axP.plot(imX[1,:])
+    axP.set_title(title)
+    axI.imshow(im,cmap="gray" ,norm=NoNorm())
+    axI.set_title(title)
 #%% Define parameters 
 N = 256
 Fs = N
@@ -37,25 +42,17 @@ imageShow(uint8c(imX),'uint(imX)')
 imageShow(np.float32(imX),'imX')
 imageShow(uint8c(imX-np.min(imX.flatten())),'uint(imX-min(imX.flatten()))')
 
-#%% plot all the images and data
+
+#%%
 fig, axs = plt.subplots(2, 4,figsize=(16,9))
-axs[0, 0].plot(uint8c(np.abs(imX[1,:])))
-axs[0, 0].set_title('A line of uint(abs(imX))')
-axs[1, 0].imshow(uint8c(np.abs(imX)),cmap="gray" ,norm=NoNorm())
-axs[1, 0].set_title('A line of uint(abs(imX))')
-axs[1, 1].imshow(uint8c(imX),cmap="gray" ,norm=NoNorm())
-axs[1, 1].set_title('A line of uint(imX)')
-axs[0, 1].plot(uint8c(imX[1,:]))
-axs[0, 1].set_title('A line of uint(imX)')
-axs[1, 2].imshow(np.float32(imX),cmap="gray" , norm=NoNorm())   
-axs[1, 2].set_title('A line of imX')
-axs[0, 2].plot(imX[1,:])
-axs[0, 2].set_title('A line of imX')
-axs[1, 3].imshow(uint8c(imX-np.min(imX.flatten())),cmap="gray",norm=NoNorm())   
-axs[1, 3].set_title('A line of uint(imX-min(imX.flatten()))')
-axs[0, 3].plot(uint8c(imX[1,:]-np.min(imX[1,:])))
-axs[0, 3].set_title('A line of uint(imX-min(imX.flatten()))')
+plotPlusImage(axs[0, 0],axs[1, 0],uint8c(np.abs(imX)),'A line of uint(abs(imX))')
+plotPlusImage(axs[0, 1],axs[1, 1],uint8c(imX),'A line of uint(imX)')
+plotPlusImage(axs[0, 2],axs[1, 2],np.float32(imX),'A line of imX')
+plotPlusImage(axs[0, 3],axs[1, 3],uint8c(imX-np.min(imX.flatten())),'A line of uint(imX-min(imX.flatten()))')
 plt.show()
+
+
+
 # %% appendix
 #%%
 #p = cv.imread(r"C:\Program Files\MATLAB\R2021a\toolbox\images\imdata\tire.tif",cv.IMREAD_GRAYSCALE)
@@ -65,3 +62,23 @@ plt.show()
 #cv.imshow("image", p)
 #k = cv.waitKey(0)
 #plt.hist(p.ravel(),256,[0,256])
+
+#%% plot all the images and data
+# fig, axs = plt.subplots(2, 4,figsize=(16,9))
+# axs[0, 0].plot(uint8c(np.abs(imX[1,:])))
+# axs[0, 0].set_title('A line of uint(abs(imX))')
+# axs[1, 0].imshow(uint8c(np.abs(imX)),cmap="gray" ,norm=NoNorm())
+# axs[1, 0].set_title('A line of uint(abs(imX))')
+# axs[1, 1].imshow(uint8c(imX),cmap="gray" ,norm=NoNorm())
+# axs[1, 1].set_title('A line of uint(imX)')
+# axs[0, 1].plot(uint8c(imX[1,:]))
+# axs[0, 1].set_title('A line of uint(imX)')
+# axs[1, 2].imshow(np.float32(imX),cmap="gray" , norm=NoNorm())   
+# axs[1, 2].set_title('A line of imX')
+# axs[0, 2].plot(imX[1,:])
+# axs[0, 2].set_title('A line of imX')
+# axs[1, 3].imshow(uint8c(imX-np.min(imX.flatten())),cmap="gray",norm=NoNorm())   
+# axs[1, 3].set_title('A line of uint(imX-min(imX.flatten()))')
+# axs[0, 3].plot(uint8c(imX[1,:]-np.min(imX[1,:])))
+# axs[0, 3].set_title('A line of uint(imX-min(imX.flatten()))')
+# plt.show()
