@@ -56,7 +56,7 @@ def plotStem(title, ylabel, xlabel, color, x, y):
     plt.ylabel(ylabel)
     plt.xlabel(xlabel)
     stem_plot(x, y, color)
-    plt.show()
+    #plt.show()
 
 #padded zeros to array , params (array ,size of the array after the padded)
 def padded_zeros(arr, N): # padded zeros
@@ -91,6 +91,7 @@ def stripes_uint8(height, width, num_stripes):
     vector_row = np.array([vector_row[(i * width_stripe): ((i + 1) * width_stripe)] * v for i, v in enumerate(num_stripes)])
     vector_row = vector_row.flatten()
     return np.uint8(np.matlib.repmat(vector_row,height,1))
+
 
 #1.
 height = 200
@@ -135,8 +136,6 @@ plotPlusImage(axs[0, 0], axs[1, 0], axs[2, 0], uint8c(np.abs(imX)), 'A line of u
 plotPlusImage(axs[0, 1], axs[1, 1], axs[2, 1], uint8c(imX), 'A line of uint(imX)')
 plotPlusImage(axs[0, 2], axs[1, 2], axs[2, 2], np.float32(imX), 'A line of imX')
 plotPlusImage(axs[0, 3], axs[1, 3], axs[2, 3], uint8c(imX-np.min(imX.flatten())), 'A line of uint(imX-min(imX.flatten()))')
-
-
 plt.show()
 
 # 1.3.2
@@ -181,10 +180,10 @@ y = np.cos(2*np.pi*f*t)
 y = uint8c((1 + y) * 128)
 N = len(t)
 plt.figure()
-plt.subplot(221)
+plt.subplot(211)
 plt.plot(t,y)
 plt.title(f"y = sin(2*pi*f*t) fs = {fs}")
-plt.subplot(222)
+plt.subplot(212)
 plt.plot(np.linspace(-(fs/2), fs/2-1, int(L/Ts)), np.fft.fftshift(abs(np.fft.fft(y))))
 plt.title(f"(abs(fft(y)) fs = {fs}")
 
@@ -198,6 +197,7 @@ m1 = len(f)
 m2 = len(h)
 f = padded_zeros(f, m2+m1-1)
 h = padded_zeros(h, m2+m1-1)
+plt.figure()
 plt.subplot(311)
 plotStem("f[n]", "amplitude", "n", 'red', range(m1+m2-1), f)
 plt.subplot(312)
@@ -227,6 +227,18 @@ plt.show()
 
 #%% 1.4.3
 # Additive White Gaussian Noise (AWGN)
-noise = np.random.normal(0, 1, 100)
-plt.figure()
-plt.plot(noise)
+l = 1e4
+mu = np.array([0, 3, 5, 10])
+sigma = np.array([0.5, 2.5, 9, 10])
+noise = np.array([np.sqrt(sig)*np.random.normal(0, 1, int(l))+mu[i] for i, sig in enumerate(sigma)])
+plt.figure(figsize=(10, 12))
+for i in range(noise.shape[0]):
+    plt.subplot(4, 1, i+1)
+    plt.plot(noise[i])
+    plt.title(f"noise {i}")
+    plt.xlabel("samples", horizontalalignment='right', x=1.0)
+    plt.ylabel("amp")
+
+
+
+
