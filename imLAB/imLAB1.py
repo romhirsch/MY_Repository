@@ -60,7 +60,6 @@ imGray = cv.cvtColor(imRGB, cv.COLOR_BGR2GRAY)
 imageShow(imGray,"GRAY")
 imBGR = cv.cvtColor(imRGB, cv.COLOR_RGB2BGR)
 imageShow(imBGR,"BGR")
-plt.figure()
 fig, (ax1,ax2,ax3) = plt.subplots(1,3)
 ax1.imshow(cv.cvtColor(imRGB, cv.COLOR_BGR2RGB))
 ax1.set_title('RGB')
@@ -89,7 +88,8 @@ imRGB = cv.imread(r"messi5.jpg")
 cv.rectangle(imRGB,(330,280),(390,340),(0,255,0),3)
 plt.imshow(cv.cvtColor(imRGB, cv.COLOR_BGR2RGB))
 
-# %% 7 
+# %% 7
+plt.figure()
 imRGB = cv.imread(r"messi5.jpg")
 ball = imRGB[280:340, 330:390]
 imRGB[273:333, 100:160]=ball
