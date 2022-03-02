@@ -3,17 +3,15 @@ addpath("C:\Users\rom21\OneDrive\Desktop\rep\MY_Repository\imCourse")
 img = imread("imgB.jpg");
 h = imshow('imgB.jpg');
 hp = impixelinfo;
-
-mask_b = ((img(:,:,3) < 180 ) & (img(:,:,1) < 130) & (img(:,:,2) < 130) & (img(:,:,3) - img(:,:,2) > 20 ) & (img(:,:,3)) -img(:,:,1) > 20  ); 
+mask_b = ((img(:,:,3) < 200 ) & (img(:,:,1) < 150) & (img(:,:,2) < 150) & (img(:,:,3) - img(:,:,2) > 20 ) & (img(:,:,3)) -img(:,:,1) > 20  ); 
 %%
 imshow(uint8(~mask_b).*img)
 mask_img = uint8(~mask_b).*img;
 %mask_img(mask_img==0)=255;
 imshow(mask_img)
-img_bck = imread("tire.tif");
+img_bck = imread("peppers.png");
 img_bck = imresize(img_bck ,size(mask_img(:,:,1)));
-imshow(img_bck.*unit8(mask_b))
-imshow(mask_img+img_bck.*unit8(mask_b))
+imshow(mask_img+img_bck.*uint8(mask_b))
 
 %%
 
